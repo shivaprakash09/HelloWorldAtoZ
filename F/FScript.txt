@@ -1,0 +1,54 @@
+----------------------------------------
+FScript - Scripting Cocoa using F-Script
+----------------------------------------
+
+"F-SCRIPT CURRENCY CONVERTER (VERSION 1)"
+
+"Instantiate and configure a window"
+window := NSWindow alloc initWithContentRect:(125<>513 extent:383<>175)
+                                   styleMask:NSTitledWindowMask + NSClosableWindowMask + NSMiniaturizableWindowMask
+                                     backing:NSBackingStoreBuffered
+                                       defer:NO.
+
+"Put the window onscreen"
+window orderFront:nil.
+
+"Give a title to the window"
+window setTitle:'Currency Converter'.
+
+"Instantiate a form object"
+form := NSForm alloc initWithFrame:(15<>70 extent:348<>85).
+
+"Put the form into the window"
+window contentView addSubview:form.
+
+"Configure the form"
+form addEntry:'Exchange Rate per $1'.
+form addEntry:'Dollars to Convert'.
+form addEntry:'Amount in Other Currency'.
+form setInterlineSpacing:9.
+form setAutosizesCells:YES.
+
+"Instantiate a decorative line and put it in the window"
+line := NSBox alloc initWithFrame:(15<>59 extent:353<>2).
+window contentView addSubview:line.
+
+"Instantiate a button, put it in the window and configure it"
+button := NSButton alloc initWithFrame:(247<>15 extent:90<>30).
+window contentView addSubview:button.
+button setBezelStyle:NSRoundedBezelStyle.
+button setTitle:'Convert'.
+button setKeyEquivalent:'\r'.
+
+"Create the script that will compute the currency conversion"
+conversionScript := [(form cellAtIndex:2) setStringValue:(form cellAtIndex:0) floatValue * (form cellAtIndex:1) floatValue].
+
+"Make the script the target of the form.
+The script will be evaluated when the user presses Return"
+form setTarget:conversionScript.
+form setAction:#value.
+
+"Make the script the target of the button.
+The script will be evaluated when the user presses the button"
+button setTarget:conversionScript.
+button setAction:#value.

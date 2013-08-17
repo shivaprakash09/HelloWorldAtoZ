@@ -1,0 +1,9 @@
+-----------------
+HelloWorld : TTCN
+-----------------
+
+module HelloWorld {
+   control {
+     log("Hello, world!");
+   }
+ }

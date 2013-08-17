@@ -1,0 +1,23 @@
+===========================
+XHarbour:HelloWWorld
+===========================
+
+Example 1:
+===========
+? "Hello, world!"
+
+Example 2:
+===========
+ QOut( "Hello, world!" )
+
+Example 3:
+===========
+ Alert( "Hello, world!" )
+
+Example 4:enclosed in an explicit procedure:
+============================================
+ PROCEDURE Main()
+ 
+    ? "Hello, world!"
+
+ RETURN

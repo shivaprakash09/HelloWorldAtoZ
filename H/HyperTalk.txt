@@ -1,0 +1,10 @@
+--------------------------
+HelloWorld : HyperTalk
+--------------------------
+
+Ex1:
+put "Hello, World!"
+
+Ex2:
+Answer "Hello, World!"
+

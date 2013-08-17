@@ -1,0 +1,14 @@
+---------------------
+HelloWorld : RPG Code
+---------------------
+
+Message Window
+-----------------------
+mwin("Hello, World!")
+wait()
+
+On Screen Text
+------------------------
+text(1,1"Hello, World!")
+wait()
+

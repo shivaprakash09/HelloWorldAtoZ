@@ -1,0 +1,7 @@
+---------------------
+HelloWorld : Napier88
+---------------------
+
+s = 'HelloWorld!';
+proc( s : string ) ;
+OutputString( stdOut,s );

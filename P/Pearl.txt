@@ -1,0 +1,27 @@
+--------------------
+Pearl : Code Snippet
+--------------------
+
+PROBLEM;
+DCL x FIXED;
+...
+SPC xx FIXED IDENT (x);
+T: TASK;
+...
+END; ! T
+P: PROC;
+DCL y FIXED;
+x := 2;
+BEGIN
+DCL x FLOAT;
+x :=3 ;
+...
+BEGIN
+DCL x DUR;
+...
+END;
+...
+END;
+y := x; ! y = 2
+...
+END; ! P

@@ -1,0 +1,7 @@
+-----------------
+HelloWorld : MUF
+-----------------
+
+: main
+ me @ "Hello, World!" notify
+;

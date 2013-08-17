@@ -1,0 +1,12 @@
+-------------------
+TADS : Code Snippet
+-------------------
+
+sumOfList(lst)
+{
+  local sum = 0;
+  for (local i = 1 ; i <= lst.length() ; ++i)
+    sum += lst[i];
+
+  return sum;
+}

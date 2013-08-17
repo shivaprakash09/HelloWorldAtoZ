@@ -1,0 +1,5 @@
+-------------------
+Maya : Code Snippet
+-------------------
+
+print( "Hello, world!\n" );

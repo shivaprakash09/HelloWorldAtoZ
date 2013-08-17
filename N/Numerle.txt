@@ -1,0 +1,20 @@
+--------------------
+HelloWorld : Numerle
+--------------------
+
+Ex1:
+------------------------------------------
+
+System.Console.WriteLine("Hello, World!");
+
+
+Ex2:
+-----------------------------------------
+using System.Console;
+    module HelloWorld
+    {
+       Main():void
+       {
+          WriteLine("Hello, world!");
+       }
+    }

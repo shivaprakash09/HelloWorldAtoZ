@@ -1,0 +1,11 @@
+--------------------------------------
+HelloWorld : Lindex Scripting Langauge
+---------------------------------------
+
+default
+  {
+      state_entry()
+      {
+          llSetText("Hello, World!" , <0,0,0> , 1.0);
+      }
+  }

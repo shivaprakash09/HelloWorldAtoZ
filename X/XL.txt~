@@ -1,0 +1,16 @@
+===========================
+XL: Hello World Programming
+===========================
+
+Hello World: Console Mode
+=========================
+
+use XL.TEXT_IO
+ WriteLn "Hello World"
+
+
+Hello World: GUI Mode
+=========================
+
+use XL.TEXT_IO
+ WriteLn "Hello World"

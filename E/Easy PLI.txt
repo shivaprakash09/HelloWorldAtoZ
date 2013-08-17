@@ -1,0 +1,7 @@
+--------------------------
+HelloWorld: Easy PL/I
+--------------------------
+
+Hello2: proc options(main);
+     put list ('Hello, world!');
+end Hello2;

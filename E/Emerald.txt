@@ -1,0 +1,15 @@
+-----------------------------
+Emerald : Code Snippet
+-----------------------------
+
+const Kilroy <-  object Kilroy
+  process
+  const origin <-  locate self
+  const up <- origin.getActiveNodes
+  for e in up
+        const there <- e.getTheNode
+        move self to there
+  end for
+  move self to origin
+  end process
+end Kilroy

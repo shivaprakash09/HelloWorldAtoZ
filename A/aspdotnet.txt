@@ -1,0 +1,12 @@
+================================================
+Here is a list of some of the .NET languages:
+1. C#
+2. Visual Basic .NET
+3. Managed C++
+================================================
+
+// in the code behind using C#
+protected void Page_Load(object sender, EventArgs e)
+{
+  Response.Write("Hello, world!");
+}

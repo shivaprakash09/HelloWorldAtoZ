@@ -1,0 +1,17 @@
+=================================================
+The BitC programming Language
+=================================================
+
+(define (bad x)
+  (set! p (5, #\d))
+  x)
+id-by-ref: (fn ((by-ref 'a)) 'a)
+
+p.first
+1: int32  ;; meaning (const int32)
+
+(bad p.first)
+1: int32  ;; permitted, but nonsensical
+
+p.first
+5: int32  ;; oops!

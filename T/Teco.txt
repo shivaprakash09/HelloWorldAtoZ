@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : Teco 
+-------------------
+
+!Hello in TECO
+FTHello World$!

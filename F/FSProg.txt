@@ -1,0 +1,20 @@
+-------------------------
+FSProg : Code Snippet
+-------------------------
+
+/ / Create a folder and a file 
+dCreate ( _DIR; \ MyDir \ ) 
+fCreate ( _DIR; \ MyDir \ File.txt )
+
+/ / Copy the created folder and all its contents 
+Dcopy ( _DIR; \ MyDir \ , _DIR; \ MyDirCopy )
+
+/ / Displays a break 
+post ( Info , This is a break. , 64 )
+
+/ / Delete the two files created 
+DDEL ( _DIR; \ MyDirCopy ) 
+DDEL ( _DIR; \ MyDir )
+
+/ / Display a message after the script 
+messages ( info , End of script. , 64 )

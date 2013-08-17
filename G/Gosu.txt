@@ -1,0 +1,5 @@
+-------------------
+HelloWorld : Gosu
+-------------------
+
+print("Goodbye, World!")

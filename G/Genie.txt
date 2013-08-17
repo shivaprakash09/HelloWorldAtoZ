@@ -1,0 +1,22 @@
+---------------------
+HelloWorld : Genie
+---------------------
+
+Ex1:
+----
+[indent=4]
+ 
+init
+    print "Hello, world!"
+
+Ex2:
+-----
+
+class Sample
+ 
+        def run()
+                stdout.printf("Hello, world!\n")
+ 
+init
+        var sample = new Sample()
+        sample.run()

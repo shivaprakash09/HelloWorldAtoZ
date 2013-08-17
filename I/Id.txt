@@ -1,0 +1,9 @@
+-----------------
+Id: Code Snippets
+-----------------
+
+
+ type bool = False | True;
+
+ False? :: bool -> bool
+ and :: bool -> bool -> bool

@@ -1,0 +1,7 @@
+------------------------
+HelloWorld : Objective-J
+------------------------
+
+var myString = "hello world",
+
+console.log(myString);

@@ -1,0 +1,5 @@
+-----------------
+HelloWorld : Qore
+-----------------
+
+print("hello world\n");

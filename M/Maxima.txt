@@ -1,0 +1,5 @@
+--------------------
+HelloWorld : Maxima
+--------------------
+
+print("Goodbye, World!");

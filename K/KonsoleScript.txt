@@ -1,0 +1,7 @@
+---------------------------
+HelloWorld : KonsoleScript
+---------------------------
+
+function main() {
+  Konsol:Log("Goodbye, World!")
+}

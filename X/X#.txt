@@ -1,0 +1,11 @@
+=========================
+X#:Hello World Program
+=========================
+
+var someString = 'Hello,World!' 
+...
+ESI = @.someString       //load address of someString to ESI
+CL = 'B'                 //set CL to 'B' (rewrite 'H' on the start)
+CH = ESI[1]              //move second character ('E') from string to CH
+ESI[4] = $00             //end string
+//Value of someString will be 'Bell' (or 'Bell',0,' XSharp!',0)

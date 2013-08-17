@@ -1,0 +1,5 @@
+-------------------------
+PeopleCode : Code Snippet
+-------------------------
+
+SQL = CreateSQL("SQL Statement",[bind values]);

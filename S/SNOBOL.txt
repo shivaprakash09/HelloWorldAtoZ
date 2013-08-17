@@ -1,0 +1,6 @@
+-----------------------
+HelloWOrld: SNOBOL
+----------------------
+
+  OUTPUT = "Hello world"
+END

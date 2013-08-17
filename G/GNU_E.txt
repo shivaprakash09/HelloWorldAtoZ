@@ -1,0 +1,51 @@
+---------------------------
+GNU E : COde Snippet
+---------------------------
+
+@A Binary Node Class Template
+
+\fH#include <E/collection.h>
+#include <E/iterator.h>
+
+\f(HBtemplate\fH < \f(HBdbclass\fH keyType, \f(HBdbclass\fH entityType, >  \f(HBdbclass\fH binaryTreeNode  
+{
+	keyType		nodeKey;
+	entityType		\v'+0.3m'*\v'-0.3m'entPtr;
+	binaryTreeNode		\v'+0.3m'*\v'-0.3m'leftChild;
+	binaryTreeNode		\v'+0.3m'*\v'-0.3m'rightChild;
+\f(HBpublic\fH:
+	binaryTreeNode( keyType insertKey, entityType \v'+0.3m'*\v'-0.3m' insertPtr ) {
+		nodeKey = insertKey;
+		entPtr = insertPtr;
+		leftChild = rightChild = NULL;
+	};
+
+	\f(HBITER_DEF(\fH entityType \v'+0.3m'*\v'-0.3m' search( keyType searchKey )) {
+		int cmp = compare( &searchKey, &nodeKey );
+		\f(HBif\fH( cmp <= 0 ){
+			\f(HBif\fH( leftChild != NULL )
+				\f(HBITERATE\fH( entityType \v'+0.3m'*\v'-0.3m', p, leftChild\(->search( searchKey ),
+					\f(HBYIELD\fH( p ));
+			\f(HBif\fH( cmp == 0 )
+				\f(HBYIELD\fH(entPtr);
+		} \f(HBelse\fH
+			\f(HBif\fH( rightChild != NULL )
+				\f(HBITERATE\fH( entityType \v'+0.3m'*\v'-0.3m', p, rightChild\(->search( searchKey ),
+					\f(HBYIELD(\fH p));
+	} \f(HBEND_ITER_DEF\fH;
+
+	void insert( binaryTreeNode \v'+0.3m'*\v'-0.3m' newNode ) \fH {
+		int cmp = compare( &(newNode\(->nodeKey), &nodeKey );
+		\f(HBif\fH( cmp <= 0 )
+			\f(HBif\fH( leftChild == NULL )
+				leftChild = newNode;
+			\f(HBelse\fH
+				leftChild\(->insert( newNode );
+		\f(HBelse\fH
+			\f(HBif\fH( rightChild == NULL )
+				rightChild = newNode;
+			\f(HBelse\fH
+				rightChild\(->insert( newNode );
+	};
+};
+ 

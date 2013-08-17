@@ -1,0 +1,5 @@
+-------------------
+HellOWorld : QuakeC
+-------------------
+
+bprint("Hello World\n");

@@ -1,0 +1,7 @@
+-------------------------
+HelloWorld: Fortress
+-------------------------
+
+export Executable                                                                                                                       
+ 
+run() = println("Goodbye, World!")

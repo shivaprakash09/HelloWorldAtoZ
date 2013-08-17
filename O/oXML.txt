@@ -1,0 +1,12 @@
+--------------------
+oXML : Code Snippet
+--------------------
+
+
+<o:function name="foo">
+  <doc:p>The foo() function does very little.</doc:p>
+  <o:do><-- very little --></o:do>
+  <ut:test>
+    ...test definition...
+  </ut:test>
+</o:function>

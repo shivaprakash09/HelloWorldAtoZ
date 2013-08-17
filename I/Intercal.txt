@@ -1,0 +1,6 @@
+----------------------
+HellOWorld : Intercal
+----------------------
+
+IN INTERCAL
+ HELLO WORLD

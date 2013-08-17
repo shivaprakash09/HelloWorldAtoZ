@@ -1,0 +1,7 @@
+--------------------
+HelloWorld : Natural
+--------------------
+
+* Hello World in NATURAL
+WRITE 'Hello World!'
+END

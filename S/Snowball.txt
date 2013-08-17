@@ -1,0 +1,11 @@
+-----------------------
+Snowball : Code Snippet
+-----------------------
+
+  /* assume x holds 'animadversion' */
+        $x ( [         // '[animadversion' - [ set as indicated
+             loop 2 gopast 'a'
+                       // '[anima|dversion' - c is marked by '|'
+             ]         // '[anima]dversion' - ] set as indicated
+             -> y      // y is 'anima'
+           )

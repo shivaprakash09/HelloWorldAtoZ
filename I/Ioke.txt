@@ -1,0 +1,5 @@
+-----------------
+HelloWorld: Ioke
+-----------------
+
+"Goodbye, World!" println

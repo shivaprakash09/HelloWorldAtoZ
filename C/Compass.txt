@@ -1,0 +1,4 @@
+HELLO DATA C* HELLOWORLD
+
+START 	SPACE 4,10
+        START - WRITE Hello World

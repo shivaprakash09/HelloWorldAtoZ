@@ -1,0 +1,10 @@
+=================================================
+The Bistro Programming Language
+=================================================
+
+package: my.package.subpackage;
+import: my.package.MyClass;
+
+System.out.println("hello,world!");
+
+

@@ -1,0 +1,9 @@
+-------------------
+NQC : Code Snippet
+-------------------
+
+task main ()    // main program
+{
+  SetPower(OUT_A, OUT_FULL);    // turn on motor A at 100% power
+  OnFor(OUT_A, 200);            // let the motor run for 2 seconds, then turn it off
+}

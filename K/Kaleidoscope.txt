@@ -1,0 +1,11 @@
+--------------------------------
+Kaleidoscope : Code Snippet
+--------------------------------
+
+always: temperature = mercury.height / scale;
+always: white rectangle( thermometer );
+always: grey rectangle( mercury );
+always: display number( temperature );
+while mouse.button = down do
+ mercury.top = mouse.location.y;
+end while;

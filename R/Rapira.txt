@@ -1,0 +1,7 @@
+---------------------
+HelloWorld : Rapira
+---------------------
+
+proc start()
+     output: 'Hello, world!!!';
+end proc

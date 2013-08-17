@@ -1,0 +1,40 @@
+==============================================================
+The BPEL Programming Language
+==============================================================
+
+
+	<?xml version="1.0" encoding="UTF-8"?>
+<process
+	xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+	xmlns:print="http://www.eclipse.org/tptp/choreography/2004/engine/Print">
+
+	<!--Hello World - my first ever BPEL program -->
+
+	<import importType="http://schemas.xmlsoap.org/wsdl/" 
+		location="../../test_bucket/service_libraries/tptp_EnginePrinterPort.wsdl" 
+		namespace="http://www.eclipse.org/tptp/choreography/2004/engine/Print" />
+	
+	<partnerLinks>
+		<partnerLink 	name="printService" 
+				partnerLinkType="print:printLink" 
+				partnerRole="printService"/>
+	</partnerLinks>
+	
+	<variables>
+		<variable 	name="hello_world" 
+				messageType="print:PrintMessage" />
+	</variables>
+	
+	<assign>
+		<copy>
+			<from><literal>Hello World</literal></from>
+			<to>$hello_world.value</to>
+		</copy>
+	</assign>
+
+	<invoke partnerLink="printService" operation="print" inputVariable="hello_world" />
+
+</process>
+
+
+

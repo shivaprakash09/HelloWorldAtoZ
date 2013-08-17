@@ -1,0 +1,5 @@
+------------------
+HelloWorld : Jako
+------------------
+
+~!OUTPUT> .:HELLO WORLD:. .;NEWLINE;. AND .|.DIE;;

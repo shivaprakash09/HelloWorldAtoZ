@@ -1,0 +1,7 @@
+---------------
+HelloWorld : SR
+---------------
+
+resource hello()
+  write("Hello world.")
+end

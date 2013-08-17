@@ -1,0 +1,6 @@
+-----------------
+HellWorld : TEX
+-----------------
+
+Hello world
+\bye

@@ -1,0 +1,14 @@
+----------------------
+Ml : Code Snippet
+----------------------
+
+Factorial Program:
+-------------------------------
+
+fun factorial n = let
+  fun fac (0, acc) = acc
+    | fac (n, acc) = fac (n - 1, n * acc)
+  in
+    if (n < 0) then raise Fail "negative argument"
+    else fac (n, 1)
+  end

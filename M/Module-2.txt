@@ -1,0 +1,11 @@
+---------------------
+HelloWorld : Modula-2
+--------------------- 
+
+MODULE Hello;
+IMPORT InOut;
+ 
+BEGIN
+  InOut.WriteString('Goodbye, World!');
+  InOut.WriteLn
+END Hello.

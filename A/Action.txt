@@ -1,0 +1,5 @@
+; Hello world in Action! programming language for the Atari 8-Bit computers
+
+PROC Action!()
+ PrintE("Hello World!")
+RETURN

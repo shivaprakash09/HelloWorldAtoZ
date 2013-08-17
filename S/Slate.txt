@@ -1,0 +1,5 @@
+------------------
+HellOWorld : Slate
+------------------
+
+inform: 'Hello, World!'.

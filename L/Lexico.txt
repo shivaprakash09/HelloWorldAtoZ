@@ -1,0 +1,10 @@
+---------------------------------
+HelloWorld : Lexico - In Spanish
+---------------------------------
+
+tarea muestre "Hola mundo !"
+
+clase Saludo derivada_de Form
+  publicos
+  mensajes
+  Saludo copie "Hola mundo !" en saludo.Text

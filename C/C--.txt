@@ -1,0 +1,1 @@
+foreign "C" printf(indirect "rodata" { bits8[] "hello, world\n\0"; });

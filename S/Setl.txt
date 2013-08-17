@@ -1,0 +1,9 @@
+-----------------
+HelloWorld : Setl
+-----------------
+
+-- Hello in Setl2
+
+procedure Hello();
+ print "Hello World!";
+end Hello;

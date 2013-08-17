@@ -1,0 +1,107 @@
+---------------------
+Promela : Code Snippet
+---------------------
+
+class Fork
+{
+  private boolean is_free;
+
+  Fork()
+  {
+    is_free = true;
+  }
+  
+  public synchronized void take()
+  {
+    while (!is_free)
+      wait();
+  
+    is_free = false;
+  }
+
+  public synchronized void leave()
+  {
+    is_free = true;
+    notify();
+  }
+}
+
+
+class Philosopher extends Thread
+{
+  private Fork left;
+  private Fork right;
+  private String name;
+
+  Philosopher(Fork f1, Fork f2)
+  {
+    left = f1;
+    right = f2;
+  }
+
+  public void eat()
+  {
+    left.take();
+    right.take();
+  }
+
+  public void think()
+  {
+    left.leave();
+    right.leave();
+  }
+
+  public void run()
+  {
+    while (true) {
+      eat();
+      think();
+    }
+  }
+}
+
+
+class Main extends Thread
+{
+  static int x;
+
+  static 
+  {
+    x = 1;
+  }
+
+  static Fork fork1;
+  static Fork fork2;
+  static Fork fork3;
+  static Fork fork4;
+
+  static Philosopher phil1;
+  static Philosopher phil2;
+  static Philosopher phil3;
+  static Philosopher phil4;
+
+public void run()
+  {
+    while (true)
+      sleep(1);
+  }
+  
+public static void main(String[] args)
+  {
+    fork1 = new Fork();
+    fork2 = new Fork();
+    fork3 = new Fork();
+    fork4 = new Fork();
+
+
+    phil1 = new Philosopher(fork1, fork4);
+    phil2 = new Philosopher(fork2, fork1);
+    phil3 = new Philosopher(fork3, fork2);
+    phil4 = new Philosopher(fork3, fork4);
+
+    phil1.start();
+    phil2.start();
+    phil3.start();
+    phil4.start();
+  }
+}

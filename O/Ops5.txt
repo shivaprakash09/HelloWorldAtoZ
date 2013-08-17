@@ -1,0 +1,16 @@
+-----------------
+HelloWorld : OPS5
+-----------------
+
+(object-class request
+ ^action)
+
+(startup
+ (strategy MEA)
+ (make request ^action hello)
+)
+
+(rule hello
+ (request ^action hello)
+ (write |Hello World!| (crlf))
+)

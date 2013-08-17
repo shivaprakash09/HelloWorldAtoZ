@@ -1,0 +1,14 @@
+===============================
+Sample Code in CHR
+===============================
+
+
+:- use_module(library(chr)).
+:- op(500, xfx, leq).
+:- chr_constraint leq/2.
+% X leq Y means variable X is less-or-equal to variable Y
+
+reflexivity  @ X leq X <=> true.
+antisymmetry @ X leq Y, Y leq X <=> X=Y.
+idempotence  @ X leq Y \ X leq Y <=> true.
+transitivity @ X leq Y, Y leq Z ==> X leq Z.

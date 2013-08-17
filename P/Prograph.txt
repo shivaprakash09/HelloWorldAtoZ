@@ -1,0 +1,12 @@
+-----------------------
+Prograph : Code Snippet
+-----------------------
+
+Function Foo( i: Integer): Integer;
+Begin
+ Case i of
+ 1..10: Foo := Calculation_A(i);
+ 11..100: Foo := Calculation_B(i);
+ OtherwiseFoo := Calculation_C(i);
+ End;  {Case}
+End;  {Foo}

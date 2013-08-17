@@ -1,0 +1,12 @@
+=======================================================
+A code snippet in arexx displaying  warning on events
+=======================================================
+
+ARG event
+
+IF event = 0 THEN EXIT
+IF event = 1 THEN SAY "Program has ended unexpectedly"
+IF event = 2 THEN SAY "Program has finished its job"
+IF event = 3 THEN SAY "Cannot find data in the selected directory"
+
+

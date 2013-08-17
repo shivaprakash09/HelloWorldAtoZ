@@ -1,0 +1,5 @@
+---------------------
+HelloWorld : Frink
+---------------------
+
+println["Hello, World!"]

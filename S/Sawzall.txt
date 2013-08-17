@@ -1,0 +1,11 @@
+----------------------
+Sawzall : Code Snippet
+----------------------
+
+count: table sum of int;
+total: table sum of float;
+sum_of_squares: table sum of float;
+x: float = input;
+emit count <- 1;
+emit total <- x;
+emit sum_of_squares <- x * x;

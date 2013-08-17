@@ -1,0 +1,9 @@
+=====================================
+VMRL  : HelloWorld
+=====================================
+
+Shape
+{
+ geometry Text
+ {string "Hello World!"}
+}

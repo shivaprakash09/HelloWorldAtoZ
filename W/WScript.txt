@@ -1,0 +1,5 @@
+=====================
+WScript: HelloWorld
+=====================
+
+WScript.Echo("Hello World!");

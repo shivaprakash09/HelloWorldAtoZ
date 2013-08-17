@@ -1,0 +1,17 @@
+======================================
+Unix Shell: Random Topics
+======================================
+
+Example: HelloWorld
+-----------------------
+echo 'Hello, World!'
+
+Example: Concatenation
+-----------------------
+cat <<'DELIM'
+Hello, World!
+DELIM
+
+Example: Using C like formatted output
+---------------------------------------
+printf '%s' $'Hello, World!\n'

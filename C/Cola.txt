@@ -1,0 +1,26 @@
+==============================
+HelloWorld Programming in Cola
+==============================
+
+Example 1:
+============
+
+// C/Perl-style without classes
+// Cola package/global methods are static by default, void by default
+string mesg = "Hello world\n";
+main() {
+   print(mesg);
+}
+
+Example 2:
+============
+
+// Cola OO-style
+// classes, methods and constructors public by default, fields private by default
+class Hello {
+   string mesg;
+   new() { mesg = "Hello world\n"; }
+   static void main() {
+     print(mesg);
+   }
+}

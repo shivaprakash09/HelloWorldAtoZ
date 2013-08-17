@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : Squeak
+-------------------
+
+script1
+	self setCharacters: 'Hello World!'

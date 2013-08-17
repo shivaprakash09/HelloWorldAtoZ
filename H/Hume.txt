@@ -1,0 +1,76 @@
+--------------------
+Hume : Code Snippet
+--------------------
+
+{- example file fibo-i.hume
+-}
+ 
+-- declarations
+ 
+type Int = int 32 ;
+ 
+exception EIncredible :: (Int, string) ;
+exception EIllegalArgument :: string ;
+ 
+-- expression language (eager evaluation)
+ 
+fibo :: Int -> Int ;
+ 
+fibo 0 = 1;
+fibo 1 = 1;
+fibo n = if n < 0 then raise EIllegalArgument "fibo: negative argument: " ++ (n as string)
+                  else fibo (n-1) + fibo (n-2);
+ 
+    -- fibo bounded in time
+ 
+bfibo :: Int -> Int ;
+bfibo n = (fibo n) within 10ms ;  -- evaluation time restriction
+                                  -- raises Timeout () (interpreter only)
+ 
+-- automata as stateless boxes    
+--    the state is kept by feedback into the mailboxes
+ 
+box fib
+-- tuple of inputs, single element mailboxes
+in (n::integer, flag::integer) 
+-- tuple of named outputs
+out (nextn::integer, flag'::integer, result::(integer, integer, string))  
+-- within 500KB (400KB)  -- heap and stack cost boundings (compiler only)
+                         -- would throw HeapOverflow, StackOverflow
+handles Timeout, EIncredible, EIllegalArgument     -- declares handled exceptions
+ 
+match
+-- pattern for the tuple of inputs -> expression_with_type_of_the_''out''_tuple
+-- * wildcards for unfilled outputs, and unconsumed inputs
+ 
+ (n, 0) -> if n >= 99 then raise EIncredible (n, " reached") 
+                      else let calc = bfibo n
+                           in (n+1, 0, (n, calc, "\n"))
+| (n, 1) -> (n, 0, (n, *, " Timeout thrown\n"))         
+| (n, 2) -> (n, 0, (n, *, " EIncredible thrown\n"))
+ 
+handle    
+ 
+ -- exception_pattern -> expression_with_type_of_the_''out''_tuple
+ 
+  Timeout () -> ( 0, 1, (*, *, "Timeout caught, we restart n to 0\n"))
+  | EIncredible (n, msg) -> 
+           (0, 2, (*, *, "Incredible: " ++ (n as string) ++ msg 
+                                        ++ ", we restart n to 0\n"))
+  | EIllegalArgument msg -> (0, 0, (*, *, "Illegal argument: " ++ msg ++ "\n"))
+;
+ 
+-- connections
+ 
+stream output to "std_out";
+ 
+wire fib
+ 
+  -- fib ''in'' tuple match with origins qualified named outputs and sources
+ 
+  (fib.nextn initially 0, fib.flag' initially 0)
+ 
+  -- fib ''out'' tuple match with destination mailboxes and sinks
+ 
+  (fib.n, fib.flag, output)
+;

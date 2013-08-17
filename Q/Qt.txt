@@ -1,0 +1,43 @@
+---------------
+HelloWorld : Qt
+---------------
+
+#include <qapplication.h>
+#include <qpushbutton.h>
+#include <qwidget.h>
+#include <iostream>
+
+class HelloWorld : public QWidget
+{
+ Q_OBJECT
+
+public:
+ HelloWorld();
+ virtual ~HelloWorld();
+public slots:
+ void handleButtonClicked();
+ QPushButton *mPushButton;
+};
+
+HelloWorld::HelloWorld() :
+ QWidget(),
+ mPushButton(new QPushButton("Hello, World!", this))
+{
+ connect(mPushButton, SIGNAL(clicked()), this, SLOT(handleButtonClicked()));
+}
+
+HelloWorld::~HelloWorld() {}
+
+void HelloWorld::handleButtonClicked()
+{
+ std::cout << "Hello, World!" << std::endl;
+}
+
+int main(int argc, char *argv[])
+{
+ QApplication app(argc, argv);
+ HelloWorld helloWorld;
+ app.setMainWidget(&helloWorld);
+ helloWorld.show();
+ return app.exec();
+}

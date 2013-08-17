@@ -1,0 +1,7 @@
+----------------
+HelloWorld : MPD
+----------------
+
+resource helloWorld()
+    writes("Hello World\n")
+end

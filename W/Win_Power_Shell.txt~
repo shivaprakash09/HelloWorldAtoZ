@@ -1,0 +1,8 @@
+=================================
+Windows Power Shell : Hello World
+=================================
+
+"Hello, world!"
+Write-Host "Hello, world!"
+echo "Hello, world!"
+[System.Console]::WriteLine("Hello, world!")

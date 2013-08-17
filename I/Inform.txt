@@ -1,0 +1,7 @@
+--------------------
+HelloWorld : Inform
+--------------------
+
+[Main;
+  print "Goodbye, World!^";
+];

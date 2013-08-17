@@ -1,0 +1,5 @@
+use java.lang.*;
+ main
+ {
+     System->out->println[ 'Hello World!' ];
+ }

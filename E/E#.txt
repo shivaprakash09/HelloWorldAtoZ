@@ -1,0 +1,5 @@
+-------------------------
+helloWorld: E#
+-------------------------
+
+stdout.println("Hello, world!")

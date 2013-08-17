@@ -1,0 +1,11 @@
+===============================================
+HelloWorld Program in Charion
+================================================
+
+PROGRAM
+MAP
+END
+CODE
+MESSAGE('Hello, world!!','Clarion')
+RETURN
+

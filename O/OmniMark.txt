@@ -1,0 +1,6 @@
+---------------------
+HelloWorld : OmniMark
+---------------------
+
+process
+   output "Hello World!"

@@ -1,0 +1,18 @@
+=================================
+Windows Power Shell : Hello World
+=================================
+Example 1:
+================
+"Hello, world!"
+
+Example 2:
+==========================
+Write-Host "Hello, world!"
+
+Example 3:
+====================
+echo "Hello, world!"
+
+Example 4:
+============================================
+[System.Console]::WriteLine("Hello, world!")

@@ -1,0 +1,7 @@
+------------------
+HelloWorld : Kite
+------------------
+
+"#!/usr/local/bin/kite
+ 
+"Goodbye, World!"|print;

@@ -1,0 +1,20 @@
+================================
+HelloWorld Program using Cocoa
+================================
+
+#import <Cocoa/Cocoa.h>
+@interface hello : NSObject {
+}
+@end
+
+@implementation hello
+
+-(void)awakeFromNib
+{
+	 NSRunAlertPanel(@"Message from your Computer", @"Hello, World!", @"Hi!",
+	 nil, nil);
+}
+
+@end
+
+

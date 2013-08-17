@@ -1,0 +1,11 @@
+----------------------
+Quantum : Code Snippet
+----------------------
+
+perator diffuse (qureg q) {
+     H(q);                 // Hadamard Transform
+     Not(q);               // Invert q
+     CPhase(pi, q);        // Rotate if q=1111..
+     !Not(q);              // undo inversion
+     !H(q);                // undo Hadamard Transform
+   }

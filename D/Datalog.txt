@@ -1,0 +1,6 @@
+---------------------------------
+Datalog - Code Snippet
+---------------------------------
+
+parent(bill,mary).
+parent(mary,john).

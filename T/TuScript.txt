@@ -1,0 +1,6 @@
+----------------------
+HelloWorld : Tu Script
+-----------------------
+ 
+$$ MODE TUSCRIPT
+PRINT "Hello, World!"

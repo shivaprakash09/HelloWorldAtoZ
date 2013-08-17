@@ -1,0 +1,7 @@
+=======================
+Context: HelloWorld
+=======================
+
+\starttext
+Hello, world!
+\stoptext

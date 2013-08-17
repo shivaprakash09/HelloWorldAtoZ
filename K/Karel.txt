@@ -1,0 +1,23 @@
+------------------------
+Karel : Code Snippet
+------------------------
+
+BEGINNING-OF-PROGRAM
+ 
+ DEFINE turnright AS
+ BEGIN
+   turnleft;
+   turnleft;
+   turnleft
+ END
+ 
+ BEGINNING-OF-EXECUTION
+   ITERATE 3 TIMES
+   BEGIN
+     turnright;
+     move
+   END
+   turnoff
+ END-OF-EXECUTION
+ 
+END-OF-PROGRAM

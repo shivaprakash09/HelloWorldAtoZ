@@ -1,0 +1,9 @@
+==============================
+Win/DOS Batch programming
+==============================
+
+rem "welcome to batch progrsmming" 
+
+echo "hello world!"
+
+

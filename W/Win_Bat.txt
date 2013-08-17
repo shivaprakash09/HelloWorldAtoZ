@@ -1,0 +1,5 @@
+============================
+Win_Bat: Hello World
+============================
+
+Message("Sample","Hello World!")

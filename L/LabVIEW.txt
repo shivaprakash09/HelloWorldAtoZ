@@ -1,0 +1,10 @@
+----------------------
+LabVIEW : Code Snippet
+----------------------
+
+main
+{
+  average (point1, point2,
+  pointavg)
+}
+			

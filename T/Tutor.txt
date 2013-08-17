@@ -1,0 +1,16 @@
+--------------------
+Tutor : Code Snippet
+--------------------
+
+if      n8<4
+.       write   first branch
+.       calc    n9
+elseif  n8=4
+.       write   second branch
+.       do      someunit
+else
+.       write   default branch
+.       if      n8>6
+.       .       write   special branch
+.       endif
+endif

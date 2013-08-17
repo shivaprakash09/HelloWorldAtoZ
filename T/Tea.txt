@@ -1,0 +1,5 @@
+----------------
+HelloWorld : Tea
+----------------
+
+write "HelloWorld!"

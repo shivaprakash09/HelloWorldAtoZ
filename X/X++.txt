@@ -1,0 +1,15 @@
+===============================
+X++:Hello World
+===============================
+
+class classHello
+{
+}
+
+static void main(args Args)
+{
+ dialog dialog;
+ dialog = new dialog();
+ dialog.addText("Hello World!");
+ dialog.run();
+}

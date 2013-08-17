@@ -1,0 +1,5 @@
+---------------------------
+HelloWorld: ECMAScript
+--------------------------
+
+document.writeln("HelloWorld!");

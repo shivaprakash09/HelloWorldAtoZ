@@ -1,0 +1,6 @@
+-----------------------------------
+HelloWorld - DBase 
+-----------------------------------
+
+* Hello World in dBase IV
+? "Hello World!"

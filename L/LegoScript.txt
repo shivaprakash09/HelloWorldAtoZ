@@ -1,0 +1,11 @@
+-------------------------
+LegoScript : Code Snippet
+-------------------------
+
+
+void rotateArm()
+{
+ startMotor(armMotor,63); 
+ wait(3.25); 
+ stopMotor(armMotor); 
+}

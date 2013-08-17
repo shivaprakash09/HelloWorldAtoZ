@@ -1,0 +1,11 @@
+---------------------------
+Shift Script : Code Snippet
+---------------------------
+
+' ::::::::::::::::::::::
+	' :::: Game Load ::::
+	' ::::::::::::::::::::::
+	{ Chunk GameLoad()
+           Call HndWindow_SetTitle("My Title!")
+           Call MessageBox("Hello World!")
+	}End Chunk

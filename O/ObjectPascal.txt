@@ -1,0 +1,26 @@
+--------------------------
+HelloWorld : Object Pascal
+--------------------------
+
+Apple's Object Pascal
+---------------------------------
+program ObjectPascalExample;
+ 
+   type
+      THelloWorld = object
+         procedure Put;
+      end;
+ 
+   var
+      HelloWorld: THelloWorld;
+ 
+   procedure THelloWorld.Put;
+   begin
+      WriteLn('Hello, World!');
+   end;
+ 
+begin
+   New(HelloWorld);
+   HelloWorld.Put;
+   Dispose(HelloWorld);
+end.

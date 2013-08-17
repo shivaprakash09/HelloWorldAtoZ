@@ -1,0 +1,8 @@
+++++++++++++++++++++++++++++++++++++++++++++++
+This is a bare-bone syntax of the Adenine PL
+++++++++++++++++++++++++++++++++++++++++++++++
+
+add { <urn:xxx>
+   rdf:type hs:Person ;
+   dc:title "Dennis Quan" 
+}

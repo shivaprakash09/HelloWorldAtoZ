@@ -1,0 +1,9 @@
+--------------------
+HelloWorld : MUMPS
+--------------------
+
+hello()
+ 
+  write "Hello, World!",!
+ 
+  quit

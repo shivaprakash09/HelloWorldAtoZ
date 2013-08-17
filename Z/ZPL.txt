@@ -1,0 +1,8 @@
+======================================
+ZPL Programing Language
+=====================================
+
+program HelloWorld;
+A: string = "hello,world";
+writeln(A);
+end;

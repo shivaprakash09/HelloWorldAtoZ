@@ -1,0 +1,18 @@
+----------------------------
+IBM Informix : Code Snippet
+----------------------------
+
+
+DATABASE stores
+SCREEN
+{
+===================================================================
+                          CUSTOMER  FORM
+       Number:  [f000       ]
+   
+   First Name:  [f001           ]     Last Name:  [f002           ]
+f006 = customer.city;
+a0 = customer.state, reverse, upshift;
+f007 = customer.zipcode;
+f008 = customer.phone;
+END

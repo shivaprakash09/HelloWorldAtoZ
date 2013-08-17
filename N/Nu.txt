@@ -1,0 +1,13 @@
+------------------
+Nu : Code Snippet
+------------------
+
+class Complex is NSObject
+  (ivar (double) real
+        (double) imaginary)
+ 
+  (- initWithReal:(double) x imaginary:(double) y is
+    (super init)
+    (set @real x)
+    (set @imaginary y)
+    self))

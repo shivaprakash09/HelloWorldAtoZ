@@ -1,0 +1,7 @@
+----------------------
+HelloWorld : LiveCode
+----------------------
+
+repeat ten times
+   put "Hello world at" && the time & return after field 1
+ end repeat

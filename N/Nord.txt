@@ -1,0 +1,12 @@
+------------------
+HelloWorld : Nord
+------------------
+
+FUNC FUN1, FUN2
+
+FUN1: T := 1
+FUN2:
+
+code here
+
+END

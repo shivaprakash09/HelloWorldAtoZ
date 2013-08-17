@@ -1,0 +1,35 @@
+--------------------------
+HelloWorld : Shadow Script
+--------------------------
+
+
+'set up initial variables
+  struct.follow
+   {
+    cpu.fan.speed(500.rpm)
+    cpu.max.process(100)
+   }
+  <
+   logic.handle(0)
+   int main()
+   int var()
+   array.max(100000000)
+  >
+  'open and write the text in a free handle window
+  open mainwin(io<std>) as free(1)
+   {
+    write.free(1).("Hello",&sym," world",&sym)(&sym<",">&sym<"!">
+    apply.free(1) to text
+   }
+  'reset the fan, cpu, and vars
+  <
+   logic(std)
+   fan(std.auto)
+   cpu.max(auto)
+   unint main()
+   unint var()
+   un.array.max(std)
+  >
+  'end
+  end
+  .end/

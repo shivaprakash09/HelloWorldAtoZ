@@ -1,0 +1,15 @@
+-------------------
+HelloWorld : Salmon
+-------------------
+
+Ex1:
+------------------
+"Goodbye, World!"!
+
+Ex2:
+---------------------------
+print("Goodbye, World!\n");
+
+Ex3:
+-------------------------------------------
+standard_output.print("Goodbye, World!\n");

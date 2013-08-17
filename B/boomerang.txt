@@ -1,0 +1,14 @@
+===============================================
+ The Boomerang Programming language
+===============================================
+
+  let c : lens =
+      Xml.elt NL2 "composer"
+        begin
+          Xml.simple_elt NL4 "name"
+            (copy [A-Za-z ]+ . ins ", ") .
+          Xml.attr2_elt_no_kids NL4 "years"
+            "birth" (copy NUMBER . ins "-")
+            "death" (copy NUMBER) .
+          Xml.simple_elt NL4 "nationality" (del [A-Za-z]+)
+        end

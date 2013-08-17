@@ -1,0 +1,8 @@
+-----------------
+HelloWOrld: Icon
+-----------------
+
+# In Icon
+rocedure main()
+ write("Hello world")
+end

@@ -1,0 +1,28 @@
+-----------------------
+Ratfiv : COde Snippet
+-----------------------
+
+.nf
+ 
+.br
+.in +10
+if (a > b) {
+               k = 1
+               call remark (...)
+               }
+else if (a < b) {
+               k = 2
+               call remark (...)
+               }
+else
+               return
+ 
+.fi
+.in -10
+ 
+.bp
+.ce
+WHILE
+ 
+.ti +5
+

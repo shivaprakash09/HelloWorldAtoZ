@@ -1,0 +1,5 @@
+--------------
+HelloWorld : Q
+--------------
+
+hello            = writes "Hello, world!\n";

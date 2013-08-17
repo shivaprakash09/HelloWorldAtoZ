@@ -1,0 +1,61 @@
+===========================================================
+Code Snippet in the babbage programming language
+===========================================================
+
+PROCESS CHAPTER FACTORIAL
+
+ENTRY LABEL ENTRYPOINT
+
+LITERAL TO = 4                              // Assume using the default proforma
+
+EXTERNAL ROUTINE
+     OPEN,
+     PUT,
+     CLOSE,
+     TOCHAR
+
+VECTOR [0,19] OF BYTE ANSWER = "factorial x = xxxxxx"
+ 
+HALF COUNT
+HALF VALUE
+FULL RESULT
+
+//******************************************************************************
+
+     ROUTINE FACT(VALUE)
+     // return factorial of RA.
+
+     VALUE => RESULT
+
+     WHILE DECREMENT VALUE GT //0// DO
+     <<
+          RESULT * VALUE => RESULT
+     >>
+     RETURN(RESULT)
+     END
+
+//******************************************************************************
+
+ENTRYPOINT:
+
+     OPEN(TO, 1)
+
+     // Print factorials for numbers 1 through 9
+     1 => RA
+     REPEAT
+     <<
+          RA => COUNT
+          FACT(RA) => RA
+          TOCHAR(RA, 7, ANSWER + 13)
+          TOCHAR(COUNT, 2, ANSWER + 9)
+          PUT(TO, 20, ANSWER)
+          COUNT + 1 => RA
+     >>
+     WHILE RA LT 10
+
+     CLOSE(TO)
+     STOP(0)
+     END                                        
+
+//******************************************************************************
+

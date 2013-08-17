@@ -1,0 +1,20 @@
+--------------------
+SA-C : Code Snippet
+--------------------
+
+int16[:,:] main (uint8 Image[:,:]) {
+   int16 H[3,3] = { { -1, -1, -1},
+                    {  0,  0,  0},
+                    {  1,  1,  1} };
+   int16 V[3,3] = { { -1,  0,  1},
+                    { -1,  0,  1},
+                    { -1,  0,  1} };
+   int16 M[:,:] =
+       for window W[3,3] in Image {
+         int16 dfdy, int16 dfdx=
+           for h in H dot w in W dot v in V
+           return( sum(h*w), sum(v*w) );
+         int16 magnitude = 
+                  sqrt(dfdy*dfdy+dfdx*dfdx);
+      } return( array(magnitude) );
+ } return(M);

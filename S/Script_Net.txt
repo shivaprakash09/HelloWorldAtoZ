@@ -1,0 +1,5 @@
+-------------------------
+HelloWorld : Script .Net
+-------------------------
+
+MessageBox.Show('Hello World!');

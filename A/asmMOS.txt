@@ -1,0 +1,19 @@
+====================================================
+Assembly Programming using MOS Technologies 
+====================================================
+
+_CR  = $0D               ;carriage return
+ BSOUT = $FFD2            ;kernel ROM sub, write to current output device
+ ;
+         LDX #$00         ;starting index in .X register
+ ; 
+ LOOP    LDA MSG,X        ;read message text
+         BEQ LOOPEND      ;end of text
+ ;
+         JSR BSOUT        ;output char
+         INX
+         BNE LOOP         ;repeat
+ ;
+ LOOPEND RTS              ;return from subroutine
+ ;
+ MSG     .BYT 'Hello, world!',A_CR,$00

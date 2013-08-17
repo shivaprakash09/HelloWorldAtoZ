@@ -1,0 +1,8 @@
+-------------------------------------
+HelloWorld: D++ Programming Language
+-------------------------------------
+
+function main()
+{
+ screenput "Hello, World!";
+}

@@ -1,0 +1,5 @@
+-----------------------
+HelloWorld: GolfScript
+-----------------------
+
+"Goodbye, World!"

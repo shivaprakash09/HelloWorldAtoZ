@@ -1,0 +1,5 @@
+------------------
+HelloWorld: Gecho
+------------------
+
+'Goodbye, <> 'World! print

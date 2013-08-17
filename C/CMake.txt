@@ -1,0 +1,5 @@
+=================
+CMake:HelloWorld
+=================
+
+message(STATUS "Goodbye, World!")

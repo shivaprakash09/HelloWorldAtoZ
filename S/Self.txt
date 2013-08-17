@@ -1,0 +1,5 @@
+------------------
+HelloWorld : Self
+------------------
+
+'Hello, World!' printLine.

@@ -1,0 +1,8 @@
+------------------------
+Starlogo : Code Snippet
+------------------------
+
+to setup 
+ca crt 280 
+ask-turtles [fd 15 seth 0 pd] 
+end

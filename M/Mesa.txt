@@ -1,0 +1,16 @@
+--------------------
+Mesa : Code Snippet
+--------------------
+
+IF 111=0 AND 11=0 THEN   
+  gcd 4- 0     -- by convention
+ELSE
+	BEGIN
+		r: INTEGER;
+	UNTIL n= 0
+	DO
+	r        	in MOD n:                   r gets remainder of in/
+			in 4- 12:         n       r         -- update variables
+	ENDLOOP ;
+	gcd        -- in case one of in or n was negative -- ABS[nij:
+END;

@@ -1,0 +1,5 @@
+------------------
+HelloWoRLD : Kogot
+------------------
+
+WriteLine "Hello, World!"

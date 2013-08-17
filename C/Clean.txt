@@ -1,0 +1,7 @@
+=================================
+Hello World Program using Clean
+=================================
+
+module hello
+Start :: {#Char}
+Start = "Hello, world!"

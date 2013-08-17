@@ -1,0 +1,5 @@
+PROC helloWorld()
+	WriteF('Hello, World!')
+ENDPROC
+
+

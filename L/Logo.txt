@@ -1,0 +1,7 @@
+---------------------
+HelloWorld : Logo
+---------------------
+
+print [Hello World!]
+pr [Hello World!]
+messagebox [Hi] [Hello, world!

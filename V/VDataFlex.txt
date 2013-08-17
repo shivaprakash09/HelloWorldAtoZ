@@ -1,0 +1,9 @@
+=================================================
+Visual Dataflex: HelloWorld Program
+=================================================
+
+/tela
+Hello world
+/*
+clearscreen
+page tela

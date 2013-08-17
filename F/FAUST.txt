@@ -1,0 +1,19 @@
+-------------------------
+FAUST: Code Snippet
+-------------------------
+
+Ex1: To produce silence
+------------------------
+
+process = 0
+
+Ex2: This copies the input signal to the output signal
+-------------------------------------------------------
+
+process = _;
+
+Ex3: This converts 2-channel stereo signal to one channel mono signal
+---------------------------------------------------------------------
+
+process = +;
+

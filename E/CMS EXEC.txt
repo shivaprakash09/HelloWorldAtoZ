@@ -1,0 +1,10 @@
+-----------------------------------
+CMS EXEC : Code Snippet
+-----------------------------------
+
+* The following code issues CMS commands to set
+* the "blip" character to asterisk and request
+* the "short" format for system ready messages.
+&CONTROL OFF
+SET BLIP *
+SET RDYMSG SMSG

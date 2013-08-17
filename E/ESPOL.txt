@@ -1,0 +1,14 @@
+-----------------------------------
+ESPOL : Code Syntax
+-----------------------------------
+
+Syntax:
+
+<program> ::= <block> . <space>
+<block>   ::= <unlabeled block>
+<unlabeled block> ::= <block head>; <compound tail>
+<block head> ::= BEGIN <decleration> | <block head>;
+		 <decleration>
+etc...
+
+

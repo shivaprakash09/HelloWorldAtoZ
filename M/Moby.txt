@@ -1,0 +1,20 @@
+-------------------
+Mody: Code Snippet
+-------------------
+
+module ListSortFn (E : {type T val cmp : (T, T) -> Order})
+{
+  fun sort (l : List(E.T)) -> List(E.T) {
+    fun ins : (E.T, List(E.T)) -> List(E.T) {
+      (x, Nil) => Cons(x, Nil),
+      (x, Cons(y, ys)) => if (E.cmp(x, y) is Greater)
+        then Cons(y, ins(x, ys))
+        else Cons(x, Cons(y, ys))
+    };
+    fun lp : (List(E.T), List(E.T)) -> List(E.T) {
+      (Nil, l) => l,
+      (Cons(x, xs), l) => lp (xs, ins(x, l))
+    };
+    lp (l, Nil)
+  }
+}

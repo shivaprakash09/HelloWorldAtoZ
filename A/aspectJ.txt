@@ -1,0 +1,25 @@
+===============================================================
+Here is a snippet for implementation of a business logic
+===============================================================
+
+public class SomeBusinessClass extends OtherBusinessClass {
+    // Core data members
+    // Other data members: Log stream, data-consistency flag
+    // Override methods in the base class
+    public void performSomeOperation(OperationInformation info) {
+        // Ensure authentication
+        // Ensure info satisfies contracts
+        // Lock the object to ensure data-consistency in case other 
+        // threads access it
+        // Ensure the cache is up to date
+        // Log the start of operation
+        // ==== Perform the core operation ====
+        // Log the completion of operation
+        // Unlock the object
+    }
+    // More operations similar to above
+    public void save(PersitanceStorage ps) {
+    }
+    public void load(PersitanceStorage ps) {
+    }
+}

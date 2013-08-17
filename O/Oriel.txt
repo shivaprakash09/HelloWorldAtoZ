@@ -1,0 +1,5 @@
+------------------
+HelloWorld : Oriel
+------------------
+
+MessageBox(OK, 1, INFORMATION, "Hello, world!", "Oriel Says Hello", responseValue)

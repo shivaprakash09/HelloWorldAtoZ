@@ -1,0 +1,7 @@
+==================
+Crack:Hello World
+==================
+
+import crack.io cout;
+cout `Goodbye, World!\n`;
+ 

@@ -1,0 +1,5 @@
+-----------------
+HelloWorld: NESL
+-----------------
+
+print_string 'helloWorld!'

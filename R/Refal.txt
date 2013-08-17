@@ -1,0 +1,8 @@
+---------------------
+HelloWorld : Refal
+---------------------
+
+$ENTRY Go { = <Hello>;}
+Hello {
+   = <Prout 'Hello world'>;
+}

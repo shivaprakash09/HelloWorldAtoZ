@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : Ratfor
+-------------------
+
+print *, 'hello, world'
+end

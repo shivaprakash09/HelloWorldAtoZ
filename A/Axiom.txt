@@ -1,0 +1,5 @@
+#include "aldor"
+
+stderr << "Hello world" <<newline;
+
+

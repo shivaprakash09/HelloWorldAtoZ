@@ -1,0 +1,7 @@
+===============================
+Vala: Hello World
+===============================
+
+void main(){
+	stdout.printf("Goodbye, World!\n");
+}

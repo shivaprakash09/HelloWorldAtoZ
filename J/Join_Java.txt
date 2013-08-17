@@ -1,0 +1,12 @@
+-------------------------
+Join Java : Code Snippet
+-------------------------
+
+
+class JoinExample {
+   int fragment1() & fragment2(int x) {
+      //will return value of x
+      //to caller of fragment1
+      return x;
+   }
+}

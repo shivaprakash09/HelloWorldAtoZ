@@ -1,0 +1,32 @@
+--------------------
+Go!
+--------------------
+
+
+@The following example illustrates the "ontology-oriented" type and declarations style of Go!:
+
+GENDER::= MALE | FEMALE.
+ 
+PERSON <˜ {DAYOFBIRTH:[]=>DAY.
+           AGE:[]=>INTEGER.
+           GENDER:[]=>GENDER.
+           NAME:[]=>STRING.
+           HOME:[]=>STRING.
+           LIVES:[STRING]{}}.
+ 
+PERSON:[STRING,DAY,GENDER,STRING]$=PERSON.
+ 
+PERSON(NM,BORN,SX,HM)..{
+  DAYOFBIRTH()=>BORN.
+  AGE() => YEARSBETWEEN(NOW(),BORN).
+  GENDER()=>SX.
+  NAME()=>NM.
+  HOME()=>HM.
+  LIVES(PL) :- PL=HOME().
+  YEARSBETWEEN:[INTEGER,DAY]=>INTEGER.
+  YEARSBETWEEN(...) => ..
+}.
+ 
+NEWPERSON:[STRING,DAY,GENDER,STRING]=>PERSON.
+ 
+NEWPERSON(NM,BORN,SX,HM)=>$PERSON(NM,BORN,SX,HM).

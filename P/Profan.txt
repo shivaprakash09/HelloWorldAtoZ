@@ -1,0 +1,8 @@
+-------------------
+HelloWorld : Profan
+-------------------
+
+' Hello in Profan
+cls
+print "Hello World!"
+waitkey

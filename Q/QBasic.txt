@@ -1,0 +1,5 @@
+-------------------
+HellOWorld : QBASIC
+-------------------
+
+PRINT "Hello, World!"

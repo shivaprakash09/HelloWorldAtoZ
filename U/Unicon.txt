@@ -1,0 +1,11 @@
+===============================
+Unicon  : HelloWorld
+==============================
+
+procedure main()
+        w := open("Say Hello", "g")
+        write( w, "HelloWorld!")
+        write( w, "Any key will close this window")
+        read(w)
+        close(w)
+end

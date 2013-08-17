@@ -1,0 +1,23 @@
+=======================
+HelloWorld using Cobra
+=======================
+
+Example 1: Hello World
+class Hello
+    def main
+        print 'Hello, World'
+
+Example 2: A Simple Class Implementation Using cobra
+
+class Person
+ 
+    var _name as String
+    var _age as int
+ 
+    cue init(name as String, age as int)
+        _name, _age = name, age
+ 
+    def toString as String is override
+        return 'My name is [_name] and I am [_age] years old'
+
+

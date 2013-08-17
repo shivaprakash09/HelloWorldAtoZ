@@ -1,0 +1,17 @@
+----------------------------
+HelloWorld: EGL
+----------------------------
+
+Program HelloWorld
+ 
+        const GREETING string = "Hello, ";
+ 
+        function main()                
+                sayHello();
+        end     
+ 
+        function sayHello()
+                SysLib.writeStdOut(GREETING);
+        end
+ 
+end

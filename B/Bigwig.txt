@@ -1,0 +1,11 @@
+========================================================
+The BigWig Programming Language
+========================================================
+
+service {
+  session Hello() {
+    
+    
+    exit <html>Hello World!</html>;
+  }
+}

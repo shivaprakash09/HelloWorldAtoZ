@@ -1,0 +1,8 @@
+---------------------------
+HelloWorld : Pawn Scripting
+--------------------------- 
+
+#include <core>
+main() {
+    print("Hello World!");
+}

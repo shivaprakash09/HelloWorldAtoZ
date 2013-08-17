@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : Simpol
+-------------------
+
+function main()
+end function "Hello, World!{d}{a}"

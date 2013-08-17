@@ -1,0 +1,5 @@
+------------------------
+HelloWorld : Small Basic
+------------------------
+
+TextWindow.Write("Hello World")

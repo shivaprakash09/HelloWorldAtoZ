@@ -1,0 +1,13 @@
+----------------------------
+HelloWorld: eC PL
+----------------------------
+
+class GoodByeApp : Application
+{
+   void Main()
+   {
+      PrintLn("Goodbye, World!");
+   }
+}
+
+

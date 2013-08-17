@@ -1,0 +1,11 @@
+--------------------
+HelloWorld : Nickle
+--------------------
+
+ void function hello() { printf("hello, world\n"); }
+> print hello
+void hello ()
+{
+    printf ("hello, world\n");
+}
+> 

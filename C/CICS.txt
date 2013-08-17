@@ -1,0 +1,7 @@
+=========================================
+Example Transaction using CICS
+=========================================
+
+EXEC CICS
+    SEND MAPSET(MPS1) MAP(MP1)
+END-EXEC.

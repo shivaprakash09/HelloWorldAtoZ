@@ -1,0 +1,7 @@
+-------------------------
+HelloWorld : LogTalk
+-------------------------
+
+?- write('Hello world'), nl.
+Hello world
+true.

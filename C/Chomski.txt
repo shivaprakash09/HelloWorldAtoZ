@@ -1,0 +1,19 @@
+========================================================
+Using the Chomski Command-Line utility for text patterns
+========================================================
+
+Example 1:
+===========
+cat inputFileName | chomski -s  '/(/ { until ")"; print; } clear;' > outputFileName
+
+Example 2:
+===========
+generate_data | chomski -s '/x/{clear;add "y";}print;clear;'
+
+Example 3:
+===========
+cat inputFileName | chomski -f substitute.chom > outputFileName
+
+Example 4:
+===========
+cat inputFileName | chomski -s '[-n]{plus;} <>{count;print;}' 

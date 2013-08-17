@@ -1,0 +1,5 @@
+-----------------------------
+HelloWorld :Template Toolkit
+-----------------------------
+
+[% GET "Hello World!"; %]

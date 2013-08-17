@@ -1,0 +1,18 @@
+-------------------
+Opal : Code Snippet
+-------------------
+
+Signature file:
+----------------
+   SIGNATURE GCD
+   FUN GCD: nat ** nat -> nat
+
+Implementation file:
+---------------------
+   IMPLEMENTATION GCD
+   IMPORT Nat COMPLETELY
+   DEF GCD(a,b) == IF a % b = 0 THEN b
+                       ELSE IF a-b < b THEN GCD(b,a-b)
+                           ELSE GCD(a-b,b)
+                       FI
+                   FI

@@ -1,0 +1,8 @@
+-------------------
+HelloWorld : Simula
+-------------------
+
+Begin
+   OutText ("Hello World!");
+   Outimage;
+End;

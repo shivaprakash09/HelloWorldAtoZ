@@ -1,0 +1,6 @@
+--------------------
+HellOWOrld : Netrexx
+--------------------
+
+/*Rosettacode Goodbye,world task*/
+say 'Goodbye, World!'

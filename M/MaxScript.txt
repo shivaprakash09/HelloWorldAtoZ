@@ -1,0 +1,9 @@
+----------------------
+HelloWorld : MaxScript
+----------------------
+
+Ex1:
+print "Goodbye, World!"
+
+Ex2:
+format "%" "Goodbye, World!"

@@ -1,0 +1,158 @@
+==================================================
+Snippet on floating point operations
+==================================================
+
+// parameters of the floating-point format
+macro MantWidth = 4;
+macro ExpWidth  = 3;
+macro ExpMax    = exp(2,ExpWidth)-1;
+macro ExpBias   = ExpMax/2;
+macro Width     = 1+ExpWidth+MantWidth;
+
+// macros for extracting parts of the floating point number
+macro Sign(x) = x{-1};
+macro Exp(x)  = x{-2:MantWidth};
+macro Mant(x) = x{MantWidth-1:0};
+
+// macros for interpretation of the floating point numbers
+macro ValSign(s)    = (s?-1.0:1.0);
+macro ValNMant(m)   = bv2nat(true@m)  * exp(2.0,-1*MantWidth);
+macro ValDMant(m)   = bv2nat(false@m) * exp(2.0,-1*MantWidth);
+macro ValMant(e,m)  = (e=={false::ExpWidth} ? ValDMant(m) : ValNMant(m));
+macro ValNExp(e)    = +bv2nat(e)-ExpBias;
+macro ValDExp(e)    = +1-ExpBias;
+macro ValExp(e)     = (e=={false::ExpWidth} ? ValDExp(e) : ValNExp(e));
+macro Float2Real(x) = ValSign(Sign(x)) * ValMant(Exp(x),Mant(x)) * exp(2.0,ValExp(Exp(x)));
+
+// special values
+macro posZero = false@{false::ExpWidth}@{false::MantWidth};
+macro negZero =  true@{false::ExpWidth}@{false::MantWidth};
+macro posInf  = false@{ true::ExpWidth}@{false::MantWidth};
+macro negInf  =  true@{ true::ExpWidth}@{false::MantWidth};
+macro posNaN  = false@{ true::ExpWidth}@{ true::MantWidth};
+macro negNaN  =  true@{ true::ExpWidth}@{ true::MantWidth};
+
+// special values (independent of their sign)
+macro isZero(x)     = Exp(x)=={false::ExpWidth} & Mant(x)=={false::MantWidth};
+macro isDenormal(x) = Exp(x)=={false::ExpWidth} & Mant(x)!={false::MantWidth};
+macro isNormal(x)   = Exp(x)!={ true::ExpWidth} &  Exp(x)!={false::ExpWidth};
+macro isInf(x)      = Exp(x)=={ true::ExpWidth} & Mant(x)=={false::MantWidth};
+macro isNaN(x)      = Exp(x)=={ true::ExpWidth} & Mant(x)!={false::MantWidth};
+macro isNumber(x)   = Exp(x)!={ true::ExpWidth};
+
+
+
+// here comes the main module: it first deals with special cases like NaN, Zero and Infinities
+// according to the IEEE standard and then (in the largest part of case construct) handles
+// normal and denormal numbers
+
+module FloatMult(bv{Width} ?x,?y,!z,event !rdy) {
+    bv{2*MantWidth+2} p;
+    int e;
+    bool round,sticky;
+    bv{ExpWidth}  z_exp;
+    bv{MantWidth} z_mnt;
+
+    case // define special cases according to IEEE standard
+        (isNaN(x) | isNaN(y) | isZero(x) & isInf(y) | isZero(y) & isInf(x)) do {
+            z = (Sign(x) xor Sign(y) ? negNaN : posNaN);
+            emit(rdy);
+            }
+        (isInf(x) | isInf(y)) do {
+            z = (Sign(x) xor Sign(y) ? negInf : posInf);
+            emit(rdy);
+            }
+        (isZero(x) | isZero(y)) do {
+            z = (Sign(x) xor Sign(y) ? negZero : posZero);
+            emit(rdy);
+            }
+    default {
+        // x and y are (de)normal numbers different to zero
+
+        // compute exact product by adding hidden bits; note that the radix
+        // point is at now between positions 2*MantWidth and 2*MantWidth-1
+        let(nx = isNormal(x) )
+        let(ny = isNormal(y) )
+        let(mx = bv2nat(nx@Mant(x)))
+        let(my = bv2nat(ny@Mant(y)))
+        p = nat2bv(mx*my, 2*MantWidth+2);
+
+        // determine suitable exponent: we add 2 to shift the radix point
+        // to the left of p{2*MantWidth+1}
+        e = 2 + ExpBias + ValExp(Exp(x)) + ValExp(Exp(y));
+
+        // if exponent should be less than 1, we shift the product to the right
+        while(e<1) {
+            next(p) = false@p{-1:1};
+            next(e) = e+1;
+            next(round)  = p{0};
+            next(sticky) = sticky | round;
+            pause;
+        }
+        
+        // now we have e>=1, but p might have lost all 1s
+        if(p=={false::2*MantWidth+2}) {
+            z_mnt = {false::MantWidth};
+            z_exp = nat2bv(abs(e),ExpWidth);
+        } else {
+            // If p still has 1s, we try to shift p to the left until it starts
+            // with a 1. However, we do not want to destroy the property e>=1.
+            while(p{-1}!=true & e>1){
+                next(p) = p{-2:0}@false;
+                next(e) = e-1;
+                pause;
+            }
+    
+            // now we have p{-1}&e>=1 or e==1
+            if(e==1) {
+                // product is a denormal number
+                z_mnt  = p{2*MantWidth+1:MantWidth+2};
+                round  = p{MantWidth+1};
+                sticky = bv2nat(p{MantWidth:0})!=0;
+                z_exp  = {false::ExpWidth};
+            } else if(e>bv2nat({true::ExpWidth})) {
+                // product is larger than largest representable number
+                z_mnt  = {false::MantWidth};
+                round  = false;
+                sticky = false;
+                z_exp  = {true::ExpWidth};
+            } else {
+                // product is a normal number: shift p to the left to
+                // skip the hidden bit; thus decrease e once more
+                z_mnt  = p{2*MantWidth:MantWidth+1};
+                round  = p{MantWidth};
+                sticky = bv2nat(p{MantWidth-1:0})!=0;
+                z_exp  = nat2bv(abs(e-1),ExpWidth);
+            }
+        }
+
+        // possible rounding of mantissa
+        let(zf = (Sign(x) xor Sign(y))@z_exp@z_mnt)
+        if(round & (sticky | z_mnt{0}))
+            // round towards infinity
+            z = nat2bv(bv2nat(zf)+1,Width);
+        else
+            // round towards zero
+            z = zf;
+        emit(rdy);
+    }
+}
+drivenby {
+    // two normal numbers yield denormal result with round & sticky
+    x = (false,0b001,0b1010);
+    y = (false,0b010,0b0011);
+    assert(z==(false,0b000,0b1111));
+}
+drivenby {
+    // two normal numbers yield denormal result with !round & sticky
+    x = (false,0b001,0b1010);
+    y = (false,0b010,0b0010);
+    assert(z==(false,0b000,0b1101));
+}
+drivenby {
+    // two normal numbers yield denormal result with round & !sticky
+    x = (false,0b001,0b0000);
+    y = (false,0b010,0b0000);
+    //assert(z==(false,0b000,0b1101));
+}
+

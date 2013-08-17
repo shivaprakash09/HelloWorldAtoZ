@@ -1,0 +1,5 @@
+===================================
+Visual FoxPro : HelloWorld
+===================================
+
+MESSAGEBOX("Hello World")

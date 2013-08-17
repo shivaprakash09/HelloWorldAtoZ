@@ -1,0 +1,17 @@
+=================================
+Syntax of the Z-Notation
+=================================
+
+Z-section
+\begin{zsection}{ ident }{ [ident , . . . , ident] }
+section-item . . . section-item
+\end{zsection}
+section-item
+::= z-paragraph
+|
+syntax-decl
+|
+input-cmd
+command
+::= zsection path [string , . . . , string]
+

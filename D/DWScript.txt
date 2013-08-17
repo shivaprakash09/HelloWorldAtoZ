@@ -1,0 +1,5 @@
+--------------------------
+HelloWorld : DWScript
+--------------------------
+
+PrintLn('Goodbye, World!');

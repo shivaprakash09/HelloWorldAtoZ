@@ -1,0 +1,86 @@
+------------------------
+HelloWorld : Objective-C
+------------------------
+
+Forwarder.h
+# import <objc/Object.h>
+ 
+@interface Forwarder : Object {
+ id recipient; //The object we want to forward the message to.
+}
+ 
+//Accessor methods.
+- (id)recipient;
+- (id)setRecipient:(id)_recipient;
+ 
+@end
+Forwarder.m
+# import "Forwarder.h"
+ 
+@implementation Forwarder
+ 
+- (retval_t)forward:(SEL)sel args:(arglist_t) args {
+ /*
+ * Check whether the recipient actually responds to the message.
+ * This may or may not be desirable, for example, if a recipient
+ * in turn does not respond to the message, it might do forwarding
+ * itself.
+ */
+ if([recipient respondsToSelector:sel]) {
+ return [recipient performv:sel args:args];
+ } else {
+ return [self error:"Recipient does not respond"];
+ }
+}
+ 
+- (id)setRecipient:(id)_recipient {
+ [recipient autorelease];
+ recipient = [_recipient retain];
+ return self;
+}
+ 
+- (id) recipient {
+ return recipient;
+}
+@end
+Recipient.h
+# import <objc/Object.h>
+ 
+// A simple Recipient object.
+@interface Recipient : Object
+- (id)hello;
+@end
+Recipient.m
+# import "Recipient.h"
+ 
+@implementation Recipient
+ 
+- (id)hello {
+ printf("HelloWorld!\n");
+ 
+ return self;
+}
+ 
+@end
+main.m
+# import "Forwarder.h"
+# import "Recipient.h"
+ 
+int main(void) {
+ Forwarder *forwarder = [Forwarder new];
+ Recipient *recipient = [Recipient new];
+ 
+ [forwarder setRecipient:recipient]; //Set the recipient.
+ /*
+ * Observe forwarder does not respond to a hello message! It will
+ * be forwarded. All unrecognized methods will be forwarded to
+ * the recipient
+ * (if the recipient responds to them, as written in the Forwarder)
+ */
+ [forwarder hello];
+ 
+ [recipient release];
+ [forwarder release];
+ 
+ return 0;
+}

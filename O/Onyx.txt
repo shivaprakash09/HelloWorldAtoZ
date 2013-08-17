@@ -1,0 +1,7 @@
+------------------
+HelloWorld : Onyx
+------------------
+
+#!/usr/bin/onyx
+
+`Hello world!\n' print

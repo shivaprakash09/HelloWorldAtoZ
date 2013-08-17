@@ -1,0 +1,14 @@
+---------------------
+PL 360 : Code Snippet
+---------------------
+
+  BEGIN INTEGER BUCKET;
+        IF FLAG THEN
+        BEGIN BUCKET := R0; R0 := R1; R1 := R2;
+              R2 := BUCKET;
+        END ELSE
+        BEGIN BUCKET := R2; R2 := R1; R1 := R0;
+             R0 := BUCKET;
+        END
+        RESET(FLAG);
+   END

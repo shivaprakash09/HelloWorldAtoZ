@@ -1,0 +1,6 @@
+--------------------
+Lithe : Code Snippet
+--------------------
+
+rule "|" <i:int> "|" return int;
+  {if i<0 then return -i else return i end}

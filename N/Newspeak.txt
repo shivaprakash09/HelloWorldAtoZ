@@ -1,0 +1,7 @@
+--------------------
+HelloWorld: Newspeak
+--------------------
+
+HelloBraveNewWorld usingPlatform: platform = ( 
+ platform Transcript open show: 'Hello, Oh Brave new world'. 
+)

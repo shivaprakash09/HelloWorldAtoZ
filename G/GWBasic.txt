@@ -1,0 +1,5 @@
+--------------------
+HellOWorld: GW-Basic
+--------------------
+
+10 PRINT "Goodbye, World!"

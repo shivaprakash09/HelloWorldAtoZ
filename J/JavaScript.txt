@@ -1,0 +1,6 @@
+-----------------------
+HelloWorld : javaScript
+-----------------------
+
+
+document.write("Goodbye, World!");

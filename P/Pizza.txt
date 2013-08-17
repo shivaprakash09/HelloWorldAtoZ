@@ -1,0 +1,13 @@
+--------------------
+Pizza : Code Snippet
+--------------------
+
+public final class Main {
+  public int main(String args[]) {
+    System.out.println(
+      new Lines(new DataInputStream(System.in))
+        .takeWhile(nonEmpty)
+        .map(fun(String s) -> int { return Integer.parseInt(s); })
+        .reduceLeft(0, fun(int x, int y) -> int { return x + y; }));
+  }
+}

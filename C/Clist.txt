@@ -1,0 +1,6 @@
+==============================
+HelloWorld Program in Clist 
+==============================
+
+PROC 0
+WRITE Hello, World!

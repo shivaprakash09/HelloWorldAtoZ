@@ -1,0 +1,15 @@
+============================
+WebDNA: Sample Code
+============================
+
+<!--HAS_WEBDNA_TAGS-->
+<html>
+
+[text]info=[tcpconnect host=whois.domaindiscover.com&port=43]
+[tcpsend]webdna.us[unurl]%0D%0A[/unurl][/tcpsend]
+[/tcpconnect][/text]
+
+[append db=base.db]domain=webdna.us&whois=[info]
+[/append]
+
+</html>

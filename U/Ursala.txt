@@ -1,0 +1,16 @@
+=================================
+Ursala: HelloWorld
+=================================
+
+#show+
+ 
+main = -[Goodbye, World!]-
+
+output by a compiled executable
+---------------------------------
+
+#import std
+ 
+#executable ('parameterized','')
+ 
+main = <file[contents: -[Goodbye, World!]-]>!

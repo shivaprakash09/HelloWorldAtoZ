@@ -1,0 +1,26 @@
+--------------------
+Escher: Code Snippet
+--------------------
+
+ODULE      Lambda.
+CONSTRUCT   Person/0.
+FUNCTION    Jane, Mary, John: One -> Person.
+ 
+FUNCTION    Mother : Person * Person -> Boolean.
+Mother(x,y) =>
+    x=Jane & y=Mary.
+ 
+FUNCTION    Wife : Person * Person -> Boolean.
+Wife(x,y) =>
+    x=John & y=Jane.
+ 
+FUNCTION    PrimitiveRel : (Person * Person -> Boolean) -> Boolean.
+PrimitiveRel(r) =>
+    r=Mother \/ r=Wife.
+ 
+FUNCTION    Rel : (Person * Person -> Boolean) -> Boolean.
+Rel(r) =>
+    PrimitiveRel(r) \/
+    (SOME [r1,r2]
+        (r = LAMBDA [u] (SOME [z] (r1(Fst(u),z) & r2(z,Snd(u)))) &
+            PrimitiveRel(r1) & PrimitiveRel(r2))).

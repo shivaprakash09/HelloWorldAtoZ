@@ -1,0 +1,15 @@
+-------------------------
+Karel++ - Code Snippet
+-------------------------
+
+ur_Robot Karel(1, 2, East, 0);
+   Karel.move();
+   Karel.move();
+   Karel.pickBeeper();
+   Karel.move();
+   Karel.turnLeft();
+   Karel.move();
+   Karel.move();
+   Karel.putBeeper();
+   Karel.move();
+   Karel.turnOff();

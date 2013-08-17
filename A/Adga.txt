@@ -1,0 +1,13 @@
+module Main where
+
+  data Nat : Set where
+    zero : Nat
+    suc  : Nat → Nat
+
+  module B where
+    f : Nat → Nat
+    f n = suc n
+
+  g : Nat → Nat → Nat
+  g n m = f m
+

@@ -1,0 +1,26 @@
+-------------------
+GPSS : Code Snippet
+-------------------
+
+
+    SIMULATE               ; Define model
+*
+*  Model segment 1
+* 
+      GENERATE 18,6          ; Customer arrive every 18±6 mn
+      QUEUE    Chairs        ; Enter the line
+      SEIZE    Joe           ; Capture the barber
+      DEPART   Chairs        ; Leave the line
+      ADVANCE  16,4          ; Get a hair cut in 16±4 mn
+      RELEASE  Joe           ; Free the barber
+      TERMINATE              ; Leave the shop
+*
+*  Model segment 2
+*
+      GENERATE 480           ; Timer arrives at time = 480 mn
+      TERMINATE 1            ; Shut off the run
+*
+*  Control cards
+*
+      START     1            ; Start one run
+      END                    ; End model

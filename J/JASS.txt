@@ -1,0 +1,7 @@
+------------------
+HelloWorld : JASS
+------------------
+
+function Trig_JASS_test_Actions takes nothing returns nothing
+ call DisplayTextToPlayer(GetLocalPlayer(), 0, 0, "Hello, world!")
+endfunction

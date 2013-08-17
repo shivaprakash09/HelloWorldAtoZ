@@ -1,0 +1,7 @@
+=================
+Clay:Hello World
+=================
+
+main() {
+    println("Goodbye, World!");
+}

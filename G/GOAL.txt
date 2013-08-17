@@ -1,0 +1,66 @@
+---------------------
+GOAL : Code Snippet
+---------------------
+
+(defun sparticle-red-2-converge ((sp-system sparticle-system) (particle
+sparticle-cpuinfo) (spvec sprite-vec-data-2d))
+  "Red gun 2 charge glow effect"
+  (let ((control (the sparticle-launch-control (-> particle key)))
+	 )
+    
+    ;; figure out the offset from the player's position
+    (let ((origin-vec (stack-vector))
+	  (offset-vec (stack-vector))
+	  )
+      
+      ;; retrieve offset vec off of userdata, omega.  We only had 8 bytes
+for data storage,
+   	;; but needed to store a full vec3, so we packed it into fixed
+point.
+      (let ((combined-vec (new 'stack 'vector4w))
+	    )
+	(set! (-> combined-vec x) (-> particle user-uint32))
+	(set! (-> combined-vec y) (-> particle data 0))
+	
+	(rlet ((offset :reg vf1)
+	       (preconverted :reg vf2)
+	       (iconv0)
+	       (src)
+	       )
+	  (l.q src combined-vec)   ;; GOAL->EE
+	  (mer.vh lo iconv0 src r0) ;; EE
+	  (sr.vw iconv0 iconv0 16)  ;; EE
+	  (m preconverted iconv0)   ;; EE->VU0
+
+	  ;; (format *stderr* "Value is ~d~%" iconv0) ;; GOAL
+	  
+	  ;; VU ftoi15
+	  (cvt.s.w offset preconverted :fixed 12) ;; VU0
+	  
+	  (s.q offset offset-vec)  ;; VU0->GOAL
+	  )
+	)
+      
+      
+      ;; figure out distance
+      (let ((time-remaining (-> particle timer))
+	    (distance 0.0)
+	    (tt 0.0)
+	    )
+	(set! tt (/ (the float (-> particle timer)) (the float (frame-time
+90))))
+	(*! tt tt )
+	(set! tt (- 1.0 tt))
+	
+	(vector-normalize! offset-vec (lerp PARTICLE_RED_2_CHARGE_SIZE
+(meters 0) tt))
+	
+	(vector-copy! origin-vec (-> *target* gun fire-point))
+	
+	(set! (-> spvec trans x) (+ (-> offset-vec x) (-> origin-vec x)))
+	(set! (-> spvec trans y) (+ (-> offset-vec y) (-> origin-vec y)))
+	(set! (-> spvec trans z) (+ (-> offset-vec z) (-> origin-vec z)))
+	)
+      )
+    )
+  )

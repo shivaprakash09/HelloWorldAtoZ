@@ -1,0 +1,5 @@
+-------------------------------------
+HelloWorld: Dao - Data Access object
+-------------------------------------
+
+io.writeln( 'Goodbye, World!' )

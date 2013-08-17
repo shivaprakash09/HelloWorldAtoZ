@@ -1,0 +1,7 @@
+-------------------------
+HelloWorld : RT Assembler
+-------------------------
+
+_name   Hello~World!
+pause   Hello~World!
+exit         _end

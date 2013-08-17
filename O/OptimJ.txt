@@ -1,0 +1,39 @@
+----------------------
+OptimJ - Code Snippet
+----------------------
+
+package examples;
+ 
+// a simple model for the map-coloring problem
+public model SimpleColoring solver lpsolve
+{
+  // maximum number of colors
+  int nbColors = 4;
+ 
+  // decision variables hold the color of each country
+  var int belgium in 1 .. nbColors;
+  var int denmark in 1 .. nbColors;
+  var int germany in 1 .. nbColors;
+ 
+  // neighbouring countries must have a different color
+  constraints {
+    belgium != germany;
+    germany != denmark;
+  }
+ 
+  // a main entry point to test our model
+  public static void main(String[] args)
+  {
+    // instantiate the model
+    SimpleColoring m = new SimpleColoring();
+ 
+    // solve it
+    m.extract();
+    m.solve();
+ 
+    // print solutions
+    System.out.println("Belgium: " + m.value(m.belgium));
+    System.out.println("Denmark: " + m.value(m.denmark));
+    System.out.println("Germany: " + m.value(m.germany));
+  }
+}

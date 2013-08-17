@@ -1,0 +1,9 @@
+#include<A++.h>
+
+int main(int argc,char **argv)
+{
+
+	doubleArray A(10);
+
+	A.display('' Helllo World'');
+}

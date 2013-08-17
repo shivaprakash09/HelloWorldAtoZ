@@ -1,0 +1,11 @@
+------------------
+HellOWorld : Kaya
+------------------
+
+
+program hello;
+ 
+Void main() {
+    // My first program!
+    putStrLn("Hello world!");
+}

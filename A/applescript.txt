@@ -1,0 +1,14 @@
+===========================================================
+HelloWorld Program in AppleScript
+===========================================================
+
+1. display dialog "Hello, World!"
+
+2. display alert "Hello, World!"
+
+3. say "Hello, world!"
+
+4. return "Hello,World!"
+
+
+

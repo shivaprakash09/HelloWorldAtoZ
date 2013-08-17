@@ -1,0 +1,8 @@
+===============================================
+Visual Basic: Hello World
+===============================================
+
+Private Sub Form_Load()
+    ' Execute a simple message box that will say "Hello, World!"
+    MsgBox "Hello, World!"
+End Sub

@@ -1,0 +1,8 @@
+---------------------
+HelloWorld : RTF
+---------------------
+
+{\rtf1\ansi\deff0
+{\fonttbl {\f0 Courier New;}}
+\f0\fs20 Hello, World!
+}

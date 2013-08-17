@@ -1,0 +1,16 @@
+-------------------
+Pikt : Code Snippet
+-------------------
+
+#!/usr/local/pikt/bin/pikt
+
+# send a SIGHUP signal to inetd
+
+init
+        input proc      # but what about args to inetd?
+                   "/usr/bin/ps -e -o pid,comm | /usr/bin/grep inetd"
+        dat $inetdpid  1        # 'pid' is a reserved var name
+        dat $inetdproc $        # unused
+
+rule
+        exec "/usr/bin/kill -HUP $inetdpid"

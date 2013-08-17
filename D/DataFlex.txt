@@ -1,0 +1,9 @@
+-----------------------------------
+HelloWorld: DataFlex
+-----------------------------------
+
+/tela
+Hello world
+/*
+clearscreen
+page tela

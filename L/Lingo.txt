@@ -1,0 +1,7 @@
+------------------
+HelloWorld : lingo
+-------------------
+
+on exitFrame me
+    put "Hello, world!"
+end

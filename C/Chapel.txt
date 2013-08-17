@@ -1,0 +1,15 @@
+==========================================================
+HelloWorld Using the Chapel Programming Language
+==========================================================
+
+Hello.chpl
+===========
+writeln("Hello, world!");
+
+
+Type the following the command line:
+====================================
+
+>chpl -o hello hello.chpl
+>./hello
+

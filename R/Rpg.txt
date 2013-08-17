@@ -1,0 +1,18 @@
+------------------------
+HelloWorld : RPG
+------------------------
+
+Free-Form Syntax:
+--------------------
+ /FREE
+ DSPLY 'Hello, World!';
+ *InLR = *On;
+ /END-FREE
+
+Traditional Syntax:
+---------------------
+
+ d TestMessage
+ c Const( 'Hello, World!' )
+ c TestMessage DSPLY
+ c EVAL *InLR = *On

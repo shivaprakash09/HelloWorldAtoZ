@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : Parrot
+-------------------
+
+print "Hello, World!\n"
+end

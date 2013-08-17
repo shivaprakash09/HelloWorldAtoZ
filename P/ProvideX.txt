@@ -1,0 +1,22 @@
+-----------------------
+ProvideX : Code Snippet
+-----------------------
+
+! This example code shows some ways to do the traditional hello world.
+!
+begin
+   print 'CS', ! Clear Screen
+   ! Plain Text
+   print "Hello World!"
+ 
+   ! Fonted Text (Error branch moves to next line if fonted text not available)
+   print (0,err=*next)'Font'("Arial,-16,B"), ! Use Bold 16pt Arial Font
+   print (0,err=*next)'Text'(@x(20),@y(2),"Hello World"),
+ 
+   ! Move to the 2nd to last line on screen
+   print @(3,mxl(0)-2),"Press Enter: ",
+   input a$
+ 
+   ! Message Box
+   msgbox "Hello World"+sep+sep+"This is a test message box.","Message Box"
+end

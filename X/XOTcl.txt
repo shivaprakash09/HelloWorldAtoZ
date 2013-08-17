@@ -1,0 +1,11 @@
+=============================
+XOTcl: hello world
+=============================
+
+Class create Hello
+
+Hello instproc init()
+{
+	my instvar hi
+	set hi "helloworld"
+}

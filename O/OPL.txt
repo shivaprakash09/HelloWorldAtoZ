@@ -1,0 +1,8 @@
+----------------
+HelloWorld:OPL
+----------------
+
+PROC main:
+  PRINT "Hello World!"
+  PAUSE 40
+ENDP

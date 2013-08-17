@@ -1,0 +1,17 @@
+=====================================================
+Programming in BeanShell
+=====================================================
+
+
+import com.sun.star.frame.XModel;
+    import com.sun.star.text.*;
+    import com.sun.star.uno.UnoRuntime;
+    import drafts.com.sun.star.script.provider.XScriptContext;
+
+    model = context.getDocument(); 
+    textdoc = (XTextDocument)
+        UnoRuntime.queryInterface(XTextDocument.class, model);
+
+    oText = textdoc.getText(); 
+    oCursor = oText.createTextCursor(); 
+    oText.insertString(oCursor, "Hello World", false)

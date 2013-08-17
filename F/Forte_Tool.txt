@@ -1,0 +1,33 @@
+------------------------------
+HelloWorld : Forte Tool
+------------------------------
+
+begin TOOL HelloWorld;
+    includes Framework;
+  HAS PROPERTY IsLibrary = FALSE;
+    forward  Hello;
+    -- START CLASS DEFINITIONS
+    class Hello inherits from Framework.Object
+    has public  method Init;
+    has property
+      shared=(allow=off, override=on);
+      transactional=(allow=off, override=on);
+      monitored=(allow=off, override=on);
+      distributed=(allow=off, override=on);
+    end class;  -- END CLASS DEFINITIONS
+    -- START METHOD DEFINITIONS
+    ------------------------------------------------------------
+  method Hello.Init
+  begin
+  super.Init();
+    task.Part.LogMgr.PutLine('Hello, world!');
+  end method;
+  -- END METHOD DEFINITIONS  HAS PROPERTY
+      CompatibilityLevel = 0;
+      ProjectType = APPLICATION;
+      Restricted = FALSE;
+      MultiThreaded = TRUE;
+      Internal = FALSE;
+      LibraryName = 'hellowor';
+      StartingMethod = (class = Hello, method = Init);
+    end HelloWorld;

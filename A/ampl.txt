@@ -1,0 +1,21 @@
+=================================================
+Here is a snippet of the AMPL PL
+=================================================
+
+
+data;
+set P := lite bud mich ;
+set R := malt hops ;
+param T 3 ;
+param M 40 ;
+param a malt,lite
+hops,lite
+param b malt 400
+5 malt,bud
+1 hops,bud
+hops 275 ;
+3
+2
+malt,mich
+hops,mic
+

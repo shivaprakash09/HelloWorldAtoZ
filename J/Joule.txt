@@ -1,0 +1,10 @@
+--------------------
+Joule: Code Snippet
+--------------------
+
+
+ If amount <= balance
+       • account withdraw: amount
+   else
+       • account report-bounce:
+   end

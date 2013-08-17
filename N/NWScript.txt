@@ -1,0 +1,8 @@
+-------------------------
+HelloWorld : NWScript
+-------------------------
+
+void main()
+{
+    SendMessageToPC(GetEnteringObject(), "Hello world");
+}

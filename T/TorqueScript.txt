@@ -1,0 +1,5 @@
+--------------------------
+Helloworld : Torque Script
+--------------------------
+
+echo("Hello, World!");

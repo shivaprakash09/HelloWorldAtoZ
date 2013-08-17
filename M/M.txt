@@ -1,0 +1,10 @@
+----------------
+HelloWorld : M
+----------------
+
+module HelloWorld {
+    language HelloWorld {
+        syntax Main
+          = "Hello World";
+    }
+}

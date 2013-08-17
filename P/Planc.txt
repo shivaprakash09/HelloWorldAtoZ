@@ -1,0 +1,14 @@
+--------------------
+Planc : Code Snippet
+--------------------
+
+MODULE mod
+   INTEGER ARRAY : stack (0:100)
+   PROGRAM : mprog
+      INTEGER : i, j,k, m
+      INISTACK stack
+      1 =: i
+      2 =: j
+      i+j =: k =: m
+   ENDROUTINE
+ENDMODULE

@@ -1,0 +1,3 @@
+PrintfType :: String -> #
+printf' :: (fmt::String) -> String -> PrintfType fmt
+

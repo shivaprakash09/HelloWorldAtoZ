@@ -1,0 +1,8 @@
+--------------------------
+HelloWorld : GraalScript 2
+--------------------------
+
+
+function onCreated() {
+     echo("Hello, world!");
+ }

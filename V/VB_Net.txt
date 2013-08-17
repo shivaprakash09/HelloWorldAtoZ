@@ -1,0 +1,20 @@
+=================================
+Visual Basic .Net: Hello World
+==================================
+
+Example 1: Procedural
+
+Private Sub frmForm_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
+ MessageBox.Show("Hello World!", "HELLO WORLD")
+ Me.Close()
+End Sub
+
+Example 2: Object-Oriented
+
+Public Class MyApplication
+ Shared Sub Main()
+ MessageBox.Show("Hello World!", "HELLO WORLD")
+ End Sub
+End Class
+
+

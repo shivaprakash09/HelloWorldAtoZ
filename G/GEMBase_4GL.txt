@@ -1,0 +1,9 @@
+-----------------------
+HelloWorld: GEMBase 4GL
+-----------------------
+
+procedure_form hello
+    begin_block world
+        print "Hello, world!"
+    end_block
+end_form

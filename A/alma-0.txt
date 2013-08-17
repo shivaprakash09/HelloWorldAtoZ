@@ -1,0 +1,35 @@
+++++++++++++++++++++++++++++++++++++++++++++++++
+Here is a snippet describing programming in Alma
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+MODULE tendigit;
+
+VAR i,j,k,l,count,sum: INTEGER;
+    a: ARRAY [0..9] OF INTEGER;
+
+BEGIN
+	FORALL
+		sum := 0;
+		FOR i := 0 TO 9 DO
+		SOME j :=0 TO 10-sum DO
+		a[i] = j;
+    		sum := sum + j
+ 		END;
+	    END;
+	    sum = 10;
+	    FOR k := 0 TO 9 DO
+		count := 0;
+		FOR 1 :=0 TO 9 DO
+			IF a[i] = k THEN count := count + 1 ;
+    			a[k] >= count;
+  			END;
+		END;
+		a[k] = count
+	    END;
+	    DO
+	    FOR i := 0 TO 9 DO WRITE(a[i]) 			 END
+	    END;
+  	    END;
+            END tendigit.
+			

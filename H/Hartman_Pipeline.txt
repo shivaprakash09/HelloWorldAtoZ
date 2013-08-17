@@ -1,0 +1,5 @@
+----------------------------------
+Hartman_Pipeline : Code Snippet
+----------------------------------
+
+(end ;) < input.txt | A: locate /Hello/ | > found.txt ; A: | > notfound.txt

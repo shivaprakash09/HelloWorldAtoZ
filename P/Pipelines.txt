@@ -1,0 +1,5 @@
+----------------------
+HellOWorld : Pipelines
+----------------------
+
+(end ;) < input.txt | A: locate /Hello/ | > found.txt ; A: | > notfound.txt

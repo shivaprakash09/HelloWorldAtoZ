@@ -1,0 +1,9 @@
+-------------------------
+HelloWorld : Game Maker
+-------------------------
+
+Ex1:
+show_message("Hello World!");
+
+Ex2:
+draw_text(0, 0, "Hello World!");

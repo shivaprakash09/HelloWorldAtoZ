@@ -1,0 +1,11 @@
+=================
+CPL: Max Function
+=================
+
+Max(Items, ValueFunction) = value of
+§ (Best, BestVal) = (NIL, -∞)
+while Items do §
+(Item, Val) = (Head(Items), ValueFunction(Head(Items)))
+if Val > BestVal then (Best, BestVal) := (Item, Val)
+Items := Rest(Items) §
+result is Best §

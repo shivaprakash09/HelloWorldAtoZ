@@ -1,0 +1,5 @@
+--------------------------
+HelloWorld: Euphoria
+--------------------------
+
+puts(1,"Goodbye, World!\n")

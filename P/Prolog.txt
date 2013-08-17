@@ -1,0 +1,9 @@
+-------------------
+HelloWorld : Prolog
+-------------------
+
+?- write('Hello world!'), nl.
+Hello world!
+true.
+ 
+?-

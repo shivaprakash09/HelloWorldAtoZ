@@ -1,0 +1,9 @@
+------------------
+HellOWorld: Sather
+------------------
+
+class HELLO_WORLD is
+ main is 
+  #OUT+"Hello World\n"; 
+ end; 
+end;

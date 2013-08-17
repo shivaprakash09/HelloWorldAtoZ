@@ -1,0 +1,6 @@
+---------------------------
+HelloWorld : Interger basic
+---------------------------
+
+ 10 PRINT "GOODBYE, WORLD!"
+   20 END

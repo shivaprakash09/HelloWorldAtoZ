@@ -1,0 +1,5 @@
+-------------------
+HelloWorld : HicEst
+-------------------
+
+WRITE() 'Goodbye, World!'

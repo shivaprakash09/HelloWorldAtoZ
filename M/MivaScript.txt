@@ -1,0 +1,11 @@
+---------------------
+HelloWorld:MivaScript
+---------------------
+
+html>
+<body>
+
+<b><MvEVAL EXPR="{ 'HelloWorld!' }"></b><br />
+
+</body>
+</html>

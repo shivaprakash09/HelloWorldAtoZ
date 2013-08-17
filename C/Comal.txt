@@ -1,0 +1,5 @@
+===================
+Comal: Hello World
+===================
+
+PRINT "Hello, World!"

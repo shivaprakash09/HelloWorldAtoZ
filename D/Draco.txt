@@ -1,0 +1,8 @@
+----------------------------------------
+HelloWorld: Dracfo Programming Language
+----------------------------------------
+
+proc main()void:
+        
+        writeln("HelloWorld!.");
+corp;

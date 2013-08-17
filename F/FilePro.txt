@@ -1,0 +1,6 @@
+---------------------------------
+HelloWorld : FilePro programming
+---------------------------------
+
+@once:
+     mesgbox "Hello, world!" ; exit

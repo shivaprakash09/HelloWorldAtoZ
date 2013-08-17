@@ -1,0 +1,26 @@
+--------------------------------
+GameMonkey Script: Code Snippet
+--------------------------------
+
+#include "gmMachine.h"
+#include "gmCall.h"   // Header contains helper class
+
+extern gmMachine machine;   // Virtual Machine instance
+
+// Attempts to call a function int Add(int, int) in script
+int AddTwoIntegers(int valueA, int valueB)
+{
+  int resultInt = 0;
+
+  gmCall call;
+
+  if(call.BeginGlobalFunction(&machine, "Add"))
+  {
+    call.AddParamInt(valueA);
+    call.AddParamInt(valueB);
+    call.End();
+    call.GetReturnedInt(resultInt);
+  }
+
+  return resultInt;
+}

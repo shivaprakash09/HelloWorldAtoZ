@@ -1,0 +1,15 @@
+----------------------
+HelloWorld: Flex
+----------------------
+
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="start();">
+    <mx:Script>
+        <![CDATA[
+        import mx.controls.Alert;
+ 
+        public function start():void {
+            Alert.show('Hello World, this is flex on linux!');
+        }
+        ]]>
+    </mx:Script>
+</mx:Application>

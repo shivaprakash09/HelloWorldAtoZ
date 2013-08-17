@@ -1,0 +1,5 @@
+--------------------
+HelloWorld : Gambas
+--------------------
+
+PRINT "Goodbye, World!"

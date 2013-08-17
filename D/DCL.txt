@@ -1,0 +1,5 @@
+----------------------------------
+HelloWorld - DCL Batch Programming
+----------------------------------
+
+$ write sys$output "Hello, World!"

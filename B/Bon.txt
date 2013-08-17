@@ -1,0 +1,21 @@
+============================================
+The BON Programmming Language
+============================================
+
+class CITIZEN feature
+        name, sex, age : VALUE
+        spouse : CITIZEN
+        children, parents : SET[CITIZEN]
+     
+        single : BOOLEAN  ensure Result<->(spouse=Void) end
+        divorce
+          require  not single
+          ensure   single and (old spouse).single
+        end
+
+        invariant
+          single or spouse.spouse=Current;
+          parents.count=2;
+          for_all c member_of children it_holds
+            (exists p member_of c.parents it_holds p=Current)
+     end -- class CITIZEN

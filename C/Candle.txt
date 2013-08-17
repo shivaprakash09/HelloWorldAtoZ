@@ -1,0 +1,20 @@
+<?csp1.0?>
+
+template <helloworld> 
+{
+   <html>
+      <body>
+         <h1>{@sayHello?string}</h1>
+         apply;
+      </body>
+   </html>
+}
+
+function main() 
+{
+   apply to
+	<helloworld sayHello="HelloWorld">
+
+	<helloworld>;
+}
+

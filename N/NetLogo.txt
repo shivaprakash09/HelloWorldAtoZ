@@ -1,0 +1,35 @@
+----------------------
+NetLogo : Code Snippet
+----------------------
+
+Go to the Code tab.
+Rewrite the go procedure as follows:
+to go
+  move-turtles
+  eat-grass
+  reproduce
+  check-death
+  regrow-grass
+  tick
+end
+Add the procedures for reproduce, check-death, and regrow-grass as shown below:
+to reproduce
+  ask turtles [
+    if energy > 50 [
+      set energy energy - 50
+      hatch 1 [ set energy 50 ]
+    ]
+  ]
+end
+
+to check-death
+  ask turtles [
+    if energy <= 0 [ die ]
+  ]
+end
+
+to regrow-grass
+  ask patches [
+    if random 100 < 3 [ set pcolor green ]
+  ]
+end

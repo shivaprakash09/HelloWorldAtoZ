@@ -1,0 +1,6 @@
+------------------
+HelloWorold : TACL
+------------------
+
+?TACL HELLO
+#OUTPUT Hello, World!

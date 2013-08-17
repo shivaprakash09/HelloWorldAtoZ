@@ -1,0 +1,11 @@
+---------------------
+GRASS : Code Snippet
+---------------------
+
+SINCURVE=[PROMPT "WHAT IS THE OFFSET?"
+INPUT OFFSET
+x=-160
+angle=0
+POINT OFFSET+x,SIN(angle)*80,3
+angle=angle+2
+IF (x=x+1)<159,SKIP -2]

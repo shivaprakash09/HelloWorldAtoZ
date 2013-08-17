@@ -1,0 +1,5 @@
+-----------------
+HelloWorld : Moo
+-----------------
+
+notify(player, "Hello, World!");

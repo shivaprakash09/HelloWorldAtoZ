@@ -1,0 +1,5 @@
+---------------------
+HelloWorld : Scriptol
+---------------------
+
+print "Hello World!"

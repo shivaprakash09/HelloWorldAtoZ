@@ -1,0 +1,6 @@
+========================
+HelloWorld in ColdC 
+========================
+
+echo("Hello World");
+

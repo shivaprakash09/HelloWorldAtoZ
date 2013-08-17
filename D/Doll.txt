@@ -1,0 +1,9 @@
+---------------------------------------
+HelloWorld: Doll Programming Language
+---------------------------------------
+
+this::operator()
+{
+	import system.cstdio;
+	puts("Hello, World!");
+}

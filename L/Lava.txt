@@ -1,0 +1,12 @@
+-------------------------
+HelloWorld : Lava
+-------------------------
+
+class Lava
+{
+	public static void main(String args[])
+	{
+		System.out.println("HelloWorld!");
+	}
+
+}

@@ -1,0 +1,11 @@
+------------------
+NEC : Code Snippet
+------------------
+
+
+task main() //sets a new task. main() is compulsory
+{
+     OnFwd(OUT_BC,75); //ask the motors connected to ports B and C to move forward at a power of 75.
+     Wait(5000); //wait for 5 seconds [the value is in milliseconds](note that 1000 = 1 second)
+     Off(OUT_BC); //off the motors connected to ports B and C
+}

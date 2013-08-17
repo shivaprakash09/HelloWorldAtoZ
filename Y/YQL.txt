@@ -1,0 +1,22 @@
+========================================
+Code Snippet of the Yahoo Query Language
+========================================
+
+// Base URI for Web service  
+var yql_base_uri = "http://query.yahooapis.com/v1/yql";  
+  
+// Create a variable to make results available  
+// in the global namespace  
+var yql_results = "";  
+  
+// Create a YQL query to get geo data for the  
+// San Francisco International Airport  
+var yql_query = "SELECT * from geo.places WHERE text='SFO'";  
+  
+// Callback function for handling response data  
+function handler(rsp) {     
+  if(rsp.data){             
+    yql_results = rsp.data;  
+  }  
+}  
+

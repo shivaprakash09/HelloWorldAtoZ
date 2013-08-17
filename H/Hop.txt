@@ -1,0 +1,12 @@
+------------------
+Hop: Code Snippet
+------------------
+
+1: (define-service (server-date)
+ 2:   (current-date))
+ 3:
+ 4: (<HTML>
+ 5:   (<BUTTON>
+ 6:     :onclick ~(with-hop ($server-date)
+ 7:                   (lambda (h) (alert h)))
+ 8:       "Server time"))

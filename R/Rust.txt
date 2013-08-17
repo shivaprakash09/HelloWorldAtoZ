@@ -1,0 +1,7 @@
+------------------------
+HelloWorld : Rust
+------------------------
+
+fn main() {
+    println("hello, world");
+}

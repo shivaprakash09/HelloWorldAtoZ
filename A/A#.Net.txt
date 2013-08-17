@@ -1,0 +1,7 @@
+with Ada.Text_IO;
+use Ada.Text_IO;
+
+procedure ASharp_DotNet is
+begin
+Put_Line(Item => "Hello A# .Net");
+end ASharp_DotNet;

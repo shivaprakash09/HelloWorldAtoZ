@@ -1,0 +1,5 @@
+-------------------
+HelloWorld : Rebol
+-------------------
+
+print "Hello, World!"

@@ -1,0 +1,5 @@
+-------------------
+HellOWorld : Scilab
+-------------------
+
+disp("Hello World !")

@@ -1,0 +1,6 @@
+--------------------------
+HelloWorld : SUperCollider
+--------------------------
+
+// print "Hello world!"
+"Hello world!".postln;

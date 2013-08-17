@@ -1,0 +1,11 @@
+---------------------------------
+George: Code Snippet
+---------------------------------
+
+@The following programs takes a vector of ten digits, and pronts their squares
+
+1, 10 R1 (a)
+1, 10 rep (j)
+   j | a dup * j | (a) ;
+]
+1, 10 P1 (a)

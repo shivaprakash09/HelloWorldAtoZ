@@ -1,0 +1,11 @@
+=================================================
+Common Intermediate Language
+=================================================
+
+.method public static void Main() cil managed{
+	.entrypoint
+	.maxstack 8
+	ldstr "Hello, World!"
+	call void [mscorlib]System.Console::WriteLine(string)
+	ret
+}

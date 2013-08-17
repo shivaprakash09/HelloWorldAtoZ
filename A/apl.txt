@@ -1,0 +1,19 @@
+=====================================================
+GUI Version of the Hello World Program
+=====================================================
+
+HelloWorld;window
+⍝
+⍝ Simple demonstration of Hello World in a GUI environment using APLX
+⍝
+window←'⎕' ⎕NEW 'window'                  ⍝ Create the window
+window.scale←5                            ⍝ Sizes will be in pixels
+window.caption←'Hello World with APL'     ⍝ Set window title
+window.button.New 'button'                ⍝ Create the button
+window.button.caption←'Hello World'       ⍝ Set button text
+window.button.font←'Arial Black' 48       ⍝ Use a nice big font
+window.button.align ¯1                    ⍝ Make the button fill the whole window
+window.button.onClick 'window.close'      ⍝ Set the expression to execute when
+                                          ⍝ the button is clicked
+0 0⍴⎕we window                            ⍝ Wait for window to close
+

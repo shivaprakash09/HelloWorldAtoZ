@@ -1,0 +1,6 @@
+------------------------
+HelloWorld : Q Kx
+------------------------
+
+q)"Hello world!"
+"Hello world!"

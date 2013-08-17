@@ -1,0 +1,7 @@
+---------------------
+HelloWorld : Iptscrar
+---------------------
+
+ON ENTER {
+ "Hello, " "World!" & SAY
+ }

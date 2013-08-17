@@ -1,0 +1,28 @@
+; The output file is 22 bytes.
+; 14 bytes are taken by "Hello, world!$
+;
+; Written by Stewart Moss - May 2006
+; This is a .COM file so the CS and DS are in the same segment
+;
+; I assembled and linked using TASM
+;
+; tasm /m3 /zn /q hello.asm
+; tlink /t hello.obj
+ 
+.model tiny
+.code
+org 100h
+ 
+main  proc
+ 
+      mov    ah,9                       ; Display String Service
+      mov    dx,offset hello_message    ; Offset of message (Segment DS is the right segment in .COM files)
+      int    21h                        ; call DOS int 21h service to display message at ptr ds:dx
+ 
+      retn                              ; returns to address 0000 off the stack 
+                                        ; which points to bytes which make int 20h (exit program)
+ 
+hello_message db 'Hello, world!$'
+ 
+main  endp
+end   main

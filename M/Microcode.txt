@@ -1,0 +1,19 @@
+-------------------------
+Microcode : Code Snippet
+-------------------------
+
+
+ACC_in   : ACC <- CPU internal bus
+	ACC_out  : CPU internal bus <- ACC
+	aluadd   : addition is selected as the ALU operation
+	IR_in    : IR <- CPU internal bus
+	IR_out   : CPU internal bus <- address portion of IR
+	MAR_in   : MAR <- CPU internal bus
+	MDR_in   : MDR <- CPU internal bus
+	MDR_out  : CPU internal bus <- MDR
+	PC_in    : PC <- CPU internal bus
+	PC_out   : CPU internal bus <- PC
+	pcincr   : PC <- PC + 1
+	read     : MDR <- memory[ MAR ]
+	TEMP_out : CPU internal bus <- TEMP
+	write    : memory[ MAR ] <- MDR

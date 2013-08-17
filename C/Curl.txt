@@ -1,0 +1,10 @@
+=================
+Curl:Hello World
+=================
+
+{Curl 5.0, 6.0, 7.0 applet}
+{text
+   color = "blue",
+   font-size = 16pt,
+   Hello World}
+

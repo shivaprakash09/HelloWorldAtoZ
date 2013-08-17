@@ -1,0 +1,13 @@
+----------------
+HelloWorld : TOM
+----------------
+
+public class HelloWorld {
+   %include { string.tom }
+   public final static void main(String[] args) {
+     String who = "world";
+     %match(String who) {
+       "World" -> { System.out.println("Hello, " + who + "!"); }
+       _       -> { System.out.println("Don't panic"); }
+     }
+   }

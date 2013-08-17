@@ -1,0 +1,19 @@
+==================================================
+CoffeeScript Illustration
+==================================================
+
+********In JQuery
+$(document).ready(function() {
+  // Initialization code goes here
+});
+
+
+********In coffee script - for the former statements in JQuery
+$(document).ready ->
+  # Initialization code goes here
+Or
+($ document).ready ->
+  # Initialization code goes here
+Or just
+$ ->
+  # Initialization code goes here

@@ -1,0 +1,16 @@
+-------------------
+Nial : Code Snippet
+-------------------
+
+
+Quick Sort:
+-----------------------------------------
+
+quicksort is fork [ >= [1 first,tally],
+   pass,
+   link [
+       quicksort sublist [ < [pass, first], pass ],
+       sublist [ match [pass,first],pass ],
+       quicksort sublist [ > [pass,first], pass ]
+   ]
+]

@@ -1,0 +1,7 @@
+-----------------------
+HelloWorld: JScript.NET
+-----------------------
+
+import System;
+ 
+Console.WriteLine("HelloWorld!");

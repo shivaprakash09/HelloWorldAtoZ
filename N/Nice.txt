@@ -1,0 +1,14 @@
+------------------
+HelloWorld : Nice
+------------------
+
+
+import java.io.*;
+
+{ 
+  String s; 
+  ... 
+  java.io.Writer w = new FileWriter(s); 
+  w.write("Hello world"); 
+  w.close(); 
+} 

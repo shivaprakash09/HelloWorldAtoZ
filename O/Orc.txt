@@ -1,0 +1,5 @@
+----------------
+HelloWOrld : Orc
+----------------
+
+Prompt("HelloWorld!")

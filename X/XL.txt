@@ -1,0 +1,16 @@
+===========================
+XL: Hello World Programming
+===========================
+
+Hello World: Console Mode
+=========================
+
+use XL.TEXT_IO
+ WriteLn "Hello World"
+
+
+Hello World: GUI Mode
+=========================
+
+ import IO = XL.TEXT_IO
+ IO.WriteLn "Hello World"

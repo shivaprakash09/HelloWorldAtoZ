@@ -1,0 +1,26 @@
+-----------------------
+Linoleum : Code Snippet
+-----------------------
+
+( *** LINOLEUM Example 1: Raising the power! *** )
+
+"directors"
+    program name = { Raise_the_power! }
+    unit = 32;
+
+"programme"
+    A = 7;
+    B = 10;
+
+"raise"
+    --> B;
+    C = 1;
+    ? B = 0 -> finished;
+
+"raise again"
+    C * A;
+    B ^ raise again;
+
+"finished"
+    <-- B;
+    show registers;

@@ -1,0 +1,22 @@
+===============================================
+HelloWorld using CFML Scripting
+===============================================
+
+*****Setting up a Controller say test
+
+*************** test  ********************
+<cfcomponent extends="Controller">
+
+    <cffunction name="hello"></cffunction>
+
+</cfcomponent>
+
+*************** view ***********************
+
+<h1>Hello World </h1>
+
+*****************URL************************
+
+http://localhost/index.cfm/test/hello
+
+

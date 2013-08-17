@@ -1,0 +1,20 @@
+------------------
+Mary: Code Snippet
+------------------
+
+BEGIN
+   INT i := 10;          %% Variable with initial value.
+   REF INT ri := i;      %% Pointer initialized to point to i.
+   INT j := 11;
+   j :- REF INT =: ri;   %% Type conversion and assignment
+                         %% ri now points to j.
+   i =: (ri :- VAL REF INT);     
+                         %% Assignment and type conversion
+                         %% ri points to j so j is changed.
+   IF j > 10             %% Conditional statement with result
+   THEN                  %% used inside an arithmetic expression.
+      1
+   ELSE
+      2
+   FI + j =: j;
+END

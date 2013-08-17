@@ -1,0 +1,5 @@
+==================
+XSB:Hello World
+==================
+
+<print>Hello, world!</print>

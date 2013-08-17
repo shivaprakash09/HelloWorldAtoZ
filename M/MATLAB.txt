@@ -1,0 +1,19 @@
+-------------------
+HelloWOrld : MATLAB
+-------------------
+
+Ex: 1
+------------------------------
+classdef hello
+    methods
+        function doit(this)
+            disp('Hello!')
+        end
+    end
+end
+
+Ex : 2
+-----------------------------
+>> x = hello;
+>> x.doit;
+Hello!

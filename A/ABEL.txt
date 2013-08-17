@@ -1,0 +1,20 @@
+$Input(Enter RESET Name) 
+$Input(Enter CLOCK Name for $Output0)
+-- This is the Clock Process 
+prClock: 
+-- 
+process($Output0,$Output1)
+
+Begin
+
+    if $Output0 = '0' then
+
+    -- Reset Clock Signals
+
+    elsif $Output1'event and $Output1 = '0' then
+
+    --Clock Signals
+
+    end if;
+
+End process;

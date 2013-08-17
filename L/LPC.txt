@@ -1,0 +1,13 @@
+--------------------
+LPC : Code Snippet
+--------------------
+
+inherit "/lib/room";
+ 
+void create() {
+    ::create();
+    set_short("a simple room");
+    set_long("A simple room in a simple building.");
+    set_description("This is a simple room in a simple building.  It is very nice.");
+    add_exit("north", "/realms/descartes/north_room");
+}

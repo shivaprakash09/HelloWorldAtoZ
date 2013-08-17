@@ -1,0 +1,6 @@
+-------------------
+HelloWorld : TestML
+-------------------
+
+%TestML 0.1.0
+Print("hello, World!")

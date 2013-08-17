@@ -1,0 +1,26 @@
+--------------------
+ProC : Code Snippets
+--------------------
+
+CREATE TABLE DEPT
+    (DEPTNO    NUMBER(2) NOT NULL,
+     DNAME     VARCHAR2(14),
+     LOC       VARCHAR2(13));
+
+CREATE TABLE EMP
+    (EMPNO     NUMBER(4) NOT NULL,
+     ENAME     VARCHAR2(10),
+     JOB       VARCHAR2(9),
+     MGR       NUMBER(4),
+     HIREDATE  DATE,
+     SAL       NUMBER(7, 2),
+     COMM      NUMBER(7, 2),
+     DEPTNO    NUMBER(2));
+
+CREATE TABLE PAY1
+    (ENAME     VARCHAR2(10),
+     SAL       NUMBER(7, 2));
+
+CREATE TABLE PAY2
+    (ENAME     VARCHAR2(10),
+     SAL       NUMBER(7, 2));

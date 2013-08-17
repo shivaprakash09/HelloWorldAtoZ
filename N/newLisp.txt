@@ -1,0 +1,5 @@
+--------------------
+HelloWorld : NewLisp
+--------------------
+
+(print "HelloWorld!")

@@ -1,0 +1,28 @@
+=====================================================
+Hello World Program in CCL
+=====================================================
+
+Example 1
+============================
+
+call echo("Hello World!") go
+
+
+Example 2
+============================
+
+drop program helloworld2 go
+create program helloworld2
+   call echo("Hello World!")
+end go
+
+
+Example 3
+============================
+
+drop program helloworld3 go
+create program helloworld3
+ PAINT 
+ call TEXT(1,1, "Hello World!")
+end go
+

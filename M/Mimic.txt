@@ -1,0 +1,30 @@
+﻿--------------------
+Mimic : Code Snippet
+--------------------
+
+Card columns
+0        1         2         3         4         5         6         7
+12345678901234567890123456789012345678901234567890123456789012345678901
+-----------------------------------------------------------------------
+* A SIMPLE PREDATOR-PREY MODEL FROM MARINE BIOLOGY
+/ (TUTORIAL 2: NUMERICAL SOLUTION OF ODE'S - 19/08/02)
+/ ENVIRONMENTAL FLUID MECHANICS LAB
+/ DEPT OF CIVIL AND ENVIRONMENTAL ENGINEERİNG
+/ STANFORD UNIVERSITY
+*
+* LOTKA–VOLTERRA EQUATION
+                  CON(F0,S0,TMAX)
+                  CON(ALPHA,BETA,GAMMA,EPS)
+          1DF   = ALPHA*F-BETA*F*S
+          F     = INT(1DF,F0)
+          1DS   = EPS*BETA*F*S-GAMMA*S
+          S     = INT(1DS,S0)
+                  HDR(TIME,FISH,SHARK)
+                  OUT(T,F,S)
+                  PLO(F,S)
+                  FIN(T,TMAX)
+                  END
+<EOR>
+600.       50.          50.
+0.7        0.007        0.5         0.1
+<EOF>

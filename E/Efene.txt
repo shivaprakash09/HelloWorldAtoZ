@@ -1,0 +1,14 @@
+-------------------------------
+HelloWorld: Efene PL
+-------------------------------
+
+Ex1: Void function
+
+io.format("Goodbye, World!~n")
+
+Ex2: Within a function
+
+@public 
+run = fn () {
+    io.format("Goodbye, World!~n")
+}

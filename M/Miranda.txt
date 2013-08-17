@@ -1,0 +1,7 @@
+---------------------
+Miranda: Code Snippet
+---------------------
+
+subsets []     = [[]]
+ subsets (x:xs) = [[x] ++ y | y <- ys] ++ ys
+                  where ys = subsets xs

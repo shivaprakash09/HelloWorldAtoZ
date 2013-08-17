@@ -1,0 +1,27 @@
+-------------------
+HelloWorld : Timber
+-------------------
+
+module Echo2 where
+
+import POSIX
+
+echo2 env = class
+
+   count := 1
+
+   prompt = do
+      env.stdout.write (show count++"> ")
+      count := count+1
+
+   echo str = action
+      env.stdout.write str
+      prompt
+
+   result
+      action
+         env.stdin.installR echo
+         env.stdout.write "HelloWorld!\n"
+         prompt
+
+root = newRoot echo2

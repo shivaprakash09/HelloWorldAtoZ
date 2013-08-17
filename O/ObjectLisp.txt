@@ -1,0 +1,5 @@
+-------------------------
+HelloWorld : Object Lisp
+-------------------------
+
+(print "Hello world")

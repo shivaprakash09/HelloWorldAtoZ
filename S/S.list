@@ -1,0 +1,73 @@
+S             - S is a statistical PL developed primarily by John Chambers and (in earlier versions) Rick Becker.
+S2            - S2 (Style System 2) is an object-oriented programming language developed in the late 1990s by Brad Fitzpatrick.
+S3            - S3 is a structured, imperative high-level computer programming language.
+S-Lang        - The S-Lang programming library is a software library for Unix, Windows, VMS, OS/2, and Mac OS X.
+S-PLUS        - S-PLUS is a commercial implementation of the S programming language sold by TIBCO Software Inc..
+SA-C          - Single-Assigmnent C is a member of the C programmigng langauge designed to be directly intuitively translated to circuits.
+SabreTalk     - SabreTalk is a dialect of PL/I for the S/360 IBM mainframes running the TPF platform.
+SAIL          - SAIL, the Stanford Artificial Intelligence Language, was developed by Dan Swinehart and Bob Sproull of the Stanford AI Lab in 1970.
+Salmon        - Salmon is a general-purpose, multi-paradigm language that supports imperative, object-oriented, and functional programming styles.
+SALSA         - The SALSA programming language (Simple Actor Language System and Architecture) is an actor-oriented programming language.
+SAM76         - SAM76 is a macro programming language used from the late 1970s to the present 2007 initially ran on CP/M.
+SAS           - SAS (pronounced "sass", originally Statistical Analysis System) is an integrated system of software products provided by SAS Institute.
+SASL          - SASL (from St. Andrews Static Language, alternatively St. Andrews Standard Language) is a purely functional programming language.
+Sather        - Sather is an OOPL. It originated circa 1990 at the International Computer Science Institute (ICSI) at UC Berkeley.
+Sawzall       - Sawzall is a procedural domain-specific programming language, used by Google to process large numbers of individual log records.
+Scala         - Scala (pron.: /ˈskɑːlə/ skah-lə) is an object-functional programming and scripting language for general software applications.
+Scar          - The Scar programming Language.
+Scheme        - Scheme is a functional programming language and one of the two main dialects of the programming language Lisp.
+Scilab        - Scilab is an open source, cross-platform numerical computational package and a high-level, numerically oriented PL.
+Scratch       - Scratch is a PL learning environment enabling beginners to get results without having to learn syntactic programming.
+Script.NET    - Script.NET or S# is a metaprogramming language that provides scripting functionality in Microsoft .NET applications.
+Scriptol      - The Scriptol Programming language.
+Sed           - sed reads text input, line by line, either from a file or a stream, into an internal buffer called the pattern space.
+Seed7         - Seed7 is an extensible general-purpose programming language designed by Thomas Mertes. It is syntactically similar to Pascal and Ada.
+Self          - Self is an object-oriented programming language based on the concept of prototypes. Self was a dialect of Smalltalk.
+SenseTalk     - SenseTalk is an English-like scripting language derived from the HyperTalk language used in HyperCard. 
+SequenceL     - SequenceL is a general purpose functional programming language, whose primary design objectives are performance on multicore hardware.
+SETL          - SETL (SET Language) is a very-high level programming language based on the mathematical theory of sets.
+ShadowScript  - The Shadow Script Scripting Langaueg.
+Shift Script  - Shift Script is a small, rapid development programming language that can be both used for general programs and computer games.
+Shiny         - Shiny is a simple interpreted scripting language with aspects similar to Lua, Ruby and Perl. 
+SIMPOL        - SIMPOL is an multi-paradigm programming language that can be used for both general purpose and database-oriented programming.
+SIMSCRIPT     - SIMSCRIPT is a free-form, English-like general-purpose simulation language conceived by Harry Markowitz and Bernard Hausner.
+Simula        - Simula is a name for two simulation programming languages, Simula I and Simula 67, developed in the 1960s
+Simulink      - Simulink, developed by MathWorks, is a data flow graphical programming language tool for modeling, simulating and analyzing .
+SISAL         - SISAL (Streams and Iteration in a Single Assignment Language) is a general-purpose single assignment functional programming language.
+Slate         - Slate is a prototype-based object-oriented programming language based on Self, CLOS, and Smalltalk-80.
+SLIP          - SLIP is a list processing computer programming language, invented by Joseph Weizenbaum in the 1960s.
+SMALL         - SMALL, Small Machine Algol Like Language, is a programming language developed by Dr. Nevil Brownlee of Auckland University.
+Smalltalk     - Smalltalk is an object-oriented, dynamically typed, reflective programming language. 
+Small Basic   - SmallBASIC is a BASIC programming language dialect with interpreters released as free software under the GNU. 
+Smil          - SMIL is a markup Langauge.
+SML           - Standard ML (SML) is a general-purpose, modular, functional programming language with compile-time type checking.
+SNOBOL        - SNOBOL (StriNg Oriented and symBOlic Language) is a series of computer programming languages developed by AT & T.
+Snowball      - Snowball is a small string-handling programming language whose name was chosen as a tribute to the SNOBOL programming language.
+Snusp         - SNUSP is an esoteric language that is a mix of Brainf*** and Befunge, with a call stack and optional concurrency thrown in.
+SOL           - The Secure Operations Language (SOL) was developed jointly by the United States Naval Research Laboratory and Utah State University.
+Span          - Span is a programming language targeting the Parrot virtual machine. Its syntax is meant to be very similar to C.
+SPARK         - SPARK is a formally-defined computer programming language based on the Ada programming language.
+Spitbol       - Same as Snowball
+SP/k          - SP/k is a programming language developed circa 1974[1] by R.C. Holt, D.B. Wortman, D.T. Barnard and J.R. Cordy.
+SPS           - The IBM 1401 Symbolic Programming System (SPS) was an assembler that was developed by Gary Mokotoff, IBM.
+SPSS Syntax   - The SPSL Programming Language.
+Sql           - This is a standard query langauge for querying a relational database.
+Squeak        - The Squeak programming language is a dialect of Smalltalk. It is object-oriented, class-based and reflective.
+Squirrel      - Squirrel is a high level imperative, object-oriented programming language, designed to be a light-weight scripting language.
+SR            - SR (short for Synchronizing Resources) is a programming language designed for concurrent programming.
+S/SL          - The Syntax/Semantic Language (S/SL) is an executable high level specification language for recursive descent parsers.
+SSPL          - The SSPL Programming language.
+Starlet       - The Starlet Programming langauge.
+Starlogo      - StarLogo is an agent-based simulation language developed by Mitchel Resnick, Eric Klopfer, and others at MIT Media Lab.
+Strand        - Strand is a high-level symbolic language for parallel computing, similar in syntax to Prolog.
+Standard ML   - Standard ML (SML) is a general-purpose, modular, functional programming language with compile-time type checking.
+Stata         - Stata is a general-purpose statistical software package created in 1985 by StataCorp.
+Stateflow     - Stateflow, developed by MathWorks, is a control logic tool used to model reactive systems via state machines.
+Subtext       - Subtext is a moderately visual programming language and environment, for writing application software.
+Suneido       - Suneido™ is a complete, integrated application platform - a system for developing and deploying applications.
+SuperCollider - SuperCollider is an environment and programming language originally released in 1996 by James McCartney.
+SuperTalk     - SuperTalk is the scripting language used in SuperCard. SuperTalk is a descendant of HyperTalk.
+Svg           - Svg is a markup language.
+SYMPL         - SYMPL was a programming language developed by the Control Data Corporation for use on the CDC 6000 series computer systems.
+SyncCharts    - SyncCharts is a graphical formalism dedicated to reactive system modeling. 
+SystemVerilog - SystemVerilog is a combined Hardware Description Language and Hardware Verification Language based on extensions to Verilog.

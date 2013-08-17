@@ -1,0 +1,5 @@
+------------------
+HelloWorld : T SQL
+------------------
+
+PRINT "Hello, World!"

@@ -1,0 +1,11 @@
+-------------------------
+HelloWorld : Fortran
+-------------------------
+
+Ex1:
+--------------------------
+print *,"Goodbye, World!"
+
+Ex2:Output to Stream other than stdout
+--------------------------------------
+write (89,100) "Goodbye, World!"

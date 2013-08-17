@@ -1,0 +1,9 @@
+------------------
+HelloWorld : Stata
+------------------
+
+   program hello   /*Define Hello, world! program*/
+          di "Hello, world!"
+     end
+       hello  /*run Hello, world! program*/
+   di "Hello, world!"

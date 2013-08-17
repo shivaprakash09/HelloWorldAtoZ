@@ -1,0 +1,11 @@
+========================================================
+A snippet of the argus programming language
+========================================================
+
+begin
+y: int := 0
+x: int := 3 / y
+except when zero divide (z: int): return end
+end
+except when zero divide: return end
+

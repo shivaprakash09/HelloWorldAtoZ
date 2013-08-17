@@ -1,0 +1,8 @@
+======================================================
+HelloWorld Program in Cecil progamming language
+======================================================
+
+EIF_REFERENCE my_string;
+/* some code */
+my_string = eif_string ("Hello world");
+(ep) (eif_access (a), my_string);

@@ -1,0 +1,13 @@
+--------------------
+HelloWorld - Lite-C
+--------------------
+
+void main()
+{
+   printf("Hello, World!"); // message box
+   screen_size.x = 400;
+   screen_size.y = 400; // resize the window
+   int handle = media_play("greetings.mpg",NULL,50); // start a movie in the whole window at volume 50.
+   while(media_playing(handle)) wait(1); // wait until movie was finished
+   sys_exit(NULL);
+}

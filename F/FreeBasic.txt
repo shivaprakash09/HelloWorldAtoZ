@@ -1,0 +1,7 @@
+------------------------
+HelloWorld : FreeBASIC
+------------------------
+
+PRINT "Hello World"
+   SLEEP
+   END

@@ -1,0 +1,5 @@
+-----------------
+HelloWorld : Neko
+-----------------
+
+$print("Hello World!");

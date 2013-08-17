@@ -1,0 +1,22 @@
+=======================================================
+Helloworld Programming using Charm Programming Language
+=======================================================
+
+Example 1: Earlier Versions
+ ext proc write_string (ref array char);
+    module hello;
+        ent proc start ();
+            write_string ("Hello world");
+        end_proc;
+    end_module;
+
+Example 2: Latest Version
+
+    import lib.Out;
+    module Hello
+    {
+        export proc ~start ()
+        {
+            Out.vdu.str ("Hello world"). nl();
+        }
+    }

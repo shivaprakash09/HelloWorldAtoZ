@@ -1,0 +1,10 @@
+-----------------
+HelloWorld : KPL
+-----------------
+
+Program HelloWorld
+     Method Main()
+        ShowConsole()
+        ConsoleWriteLine("Hello, world!")
+     End Method
+End Program

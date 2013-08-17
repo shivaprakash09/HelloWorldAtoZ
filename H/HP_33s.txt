@@ -1,0 +1,20 @@
+-------------------
+HelloWorld : HP 33s
+-------------------
+
+LBL H
+SF 10
+EQN
+RCL H
+RCL E
+RCL L
+RCL L
+RCL O
+R/S
+RCL W
+RCL O
+RCL R
+RCL L
+RDL D
+ENTER
+R/S

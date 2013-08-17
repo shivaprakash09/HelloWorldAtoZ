@@ -1,0 +1,12 @@
+----------------------------
+Edinburgh IMP : Code Snippet
+----------------------------
+
+<class> ::= syntax-part ::= semantic-part
+
+<EXP> ::= INCREMENT <VBL>
+
+
+routines:
+
+<ATOM> ::= ABS ( <ATOM,A> ) ::= DEWOP(214B,AREG1(1,13),A)

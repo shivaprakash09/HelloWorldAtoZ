@@ -1,0 +1,8 @@
+-----------------------------
+Elena  : HelloWorld
+-----------------------------
+
+#symbol Program =
+[
+    'program'output << "Goodbye, World!%n".
+].

@@ -1,0 +1,12 @@
+---------------------
+HelloWorld : Forth
+---------------------
+
+Ex1:
+-----
+." Goodbye, World!"
+
+
+Ex2: as a whole program:
+-------------------------
+: goodbye ( -- )   ." Goodbye, World!" CR ;

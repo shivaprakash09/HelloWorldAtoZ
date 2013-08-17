@@ -1,0 +1,6 @@
+------------------
+TTN : Code Snippet
+------------------
+
+#<ds;def;<##<ds;name;<text>>##<ss;name;subs>>>
+#<ss;def;name;subs;text>

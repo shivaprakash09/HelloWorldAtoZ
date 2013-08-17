@@ -1,0 +1,15 @@
+-------------------
+Newp : Code Snippet
+-------------------
+
+TYPE SBT = STRUCTURE BLOCK
+ BEGIN
+ REAL R;
+ DEFINE X = 5 #;
+ END;
+SBT SBVAR; %Structure Block Variable
+SBT REFERENCE SBREF; %Structure Block Reference Variable
+ACTIVATION OF SBT ASSIRW; %Typed Activation
+ACTIVATION NOTYPE; %Untyped Activation
+ASSIRW := ACTIVATION(SBVAR);
+ASSIRW.R := 10;
